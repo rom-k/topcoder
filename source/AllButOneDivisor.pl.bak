@@ -1,0 +1,26 @@
+sub _gcd {
+    ($a, $b) = @_;
+    $b ? _gcd($b, $a % $b) : $a;
+}
+
+sub _lcm {
+    ($a, $b) = @_;
+    ($a, $b) = ($b, $a) if $a < $b;
+    $a * $b / _gcd($a, $b);
+}
+
+@a = <>;
+
+for ($i=0; $i<@a; $i++) {
+    
+    $r = 1;
+    
+    for ($j=0; $j<@a; $j++) {
+        
+        $r = _lcm($r, $a[$j]) if $i != $j;
+    }
+    
+    push @r, $r if $r % $a[$i];
+}
+
+print @r ? (sort $r)[0] : -1;

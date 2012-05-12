@@ -1,0 +1,137 @@
+#include <stdio.h>
+#include <time.h>
+#include <vector>
+#include <list>
+#include <set>
+#include <string>
+#include <iostream>
+#include <fstream>
+#include <algorithm>
+#include <sstream>
+#include <queue>
+#include <map>
+#include <iomanip>
+#include <cmath>
+#include <stack>
+#include <numeric>
+#include <iterator>
+#include <cstdio>
+#include <cstdlib>
+#include <climits>
+#include <cfloat>
+#include <utility>
+#include <memory>
+#include <functional>
+#include <complex>
+
+using namespace std;
+
+typedef long long LL;
+typedef vector<int> VI;
+typedef vector<string> VS;
+typedef vector<double> VD;
+typedef vector<LL> VL;
+
+#define FORE(it, c, T) for(T::iterator it = c.begin(); it != c.end(); it++)
+#define FORI(i, n) for(int i = 0; i < (n); i++)
+#define FORIS(i, s, n) for(int i = (s); i < (n); i++)
+#define CLEAR(a) memset(a, 0, sizeof(a))
+#define SORT(a) sort(a.begin(), a.end())
+#define PB(n) push_back(n)
+#define PI M_PI
+#define EPS 1e-13
+
+#define DEBUG 1
+#define DBG(a) if (DEBUG) cout <<"DEBUG::: " <<a <<endl;
+#define DBG2(a, b) if (DEBUG) cout <<"DEBUG::: " <<a <<"=" <<b <<endl;
+
+int main() {
+	int T;
+	cin >>T;
+	cin.ignore();
+	
+	for(int t=1; t<=T; t++) {
+		
+		int C, D;
+		cin >>C >>D;
+		
+		vector<double> p;
+		FORI(i, C) {
+			int P, V;
+			cin >>P >>V;
+			FORI(j, V) p.PB(P);
+		}
+		
+		SORT(p);
+		
+		LL N = p.size();
+		double min_width = D * (N - 1);
+		
+		vector<double> p_new(N, 0.);
+		vector<double> cost(N, 0.);
+		vector<LL> g(N, 0);
+		p_new[0] = (p.front() + p.back() - min_width) / 2;
+		FORIS(i, 1, N) p_new[i] = p_new[i-1] + D;
+		LL g_cnt = 0;
+		
+		FORIS(i, 1, N) {
+			LL grp = g[i-1];
+			LL i_out = -1;
+			double cost_p = 0.;
+			double cost_n = 0.;
+			FORI(j, i) {
+				if(g[j] == grp) {
+					cost_p = max(cost_p, p_new[j] - p[j]);
+					cost_n = min(cost_n, p_new[j] - p[j]);
+					if(i_out < 0) i_out = j;
+				}
+			}
+			double diff = (cost_p + cost_n) / 2;
+			if(i_out >= 1 and p[i_out] - p[i_out - 1] <= D + diff);
+			if(diff > 0) {
+				g_cnt++;
+				FORI(j, i){
+					if(g[j] == grp) {
+						p_new[j] -= diff;
+						g[j] = g_cnt;
+					}
+				}
+			}
+			
+			cost_p = 0.;
+			cost_n = 0.;
+			FORIS(j, i, N) {
+				cost_p = max(cost_p, p_new[j] - p[j]);
+				cost_n = min(cost_n, p_new[j] - p[j]);
+			}
+			diff = (cost_p + cost_n) / 2;
+			if(diff != 0.) //todo <
+				FORIS(j, i, N)
+					p_new[j] -= diff;
+		}
+		
+//		FORI(i, N) {
+//			double cost_p = 0.;
+//			double cost_n = 0.;
+//			LL id_p = -1;
+//			LL id_n = -1;
+//			
+//		}
+		
+		if(DEBUG) cout <<"DEBUG::: p    ";
+		if(DEBUG) FORI(i, N) cout<<" " <<setw(5) <<setprecision(2) <<p[i];
+		if(DEBUG) cout <<endl;
+		if(DEBUG) cout <<"DEBUG::: p_new";
+		if(DEBUG) FORI(i, N) cout<<" " <<setw(5) <<setprecision(2) <<p_new[i];
+		if(DEBUG) cout <<endl;
+		
+		double ret = 0.;
+		FORI(i, N)
+			ret = max(ret, abs(p_new[i] - p[i]));
+		
+		cout <<"Case #" <<t <<": " <<ret <<endl;
+		//printf("Case #%d: %.0lf\n", t, ret);
+	}
+	
+	return 0;
+}

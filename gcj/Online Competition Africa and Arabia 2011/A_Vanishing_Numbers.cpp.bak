@@ -1,0 +1,125 @@
+#include <stdio.h>
+#include <time.h>
+#include <vector>
+#include <list>
+#include <set>
+#include <string>
+#include <iostream>
+#include <fstream>
+#include <algorithm>
+#include <sstream>
+#include <queue>
+#include <map>
+#include <iomanip>
+#include <cmath>
+#include <stack>
+#include <numeric>
+#include <iterator>
+#include <cstdio>
+#include <cstdlib>
+#include <climits>
+#include <cfloat>
+#include <utility>
+#include <memory>
+#include <functional>
+#include <complex>
+
+using namespace std;
+
+typedef long long LL;
+typedef vector<int> VI;
+typedef vector<string> VS;
+typedef vector<double> VD;
+typedef vector<LL> VL;
+
+#define FORE(it, c, T) for(T::iterator it = c.begin(); it != c.end(); it++)
+#define FORI(i, n) for(int i = 0; i < (n); i++)
+#define FORIS(i, s, n) for(int i = (s); i < (n); i++)
+#define CLEAR(a) memset(a, 0, sizeof(a))
+#define SORT(a) sort(a.begin(), a.end())
+#define PB(n) push_back(n)
+#define PI M_PI
+#define EPS 1e-13
+
+#define DEBUG 1
+#define DBG(a) if (DEBUG) cout <<"DEBUG::: " <<a <<endl;
+#define DBG2(a, b) if (DEBUG) cout <<"DEBUG::: " <<a <<"=" <<b <<endl;
+
+int main() {
+	int T;
+	cin >>T;
+	cin.ignore();
+	
+	for(int t=1; t<=T; t++) {
+		
+		int N;
+		cin >>N;
+		
+//		vector<string> list(N, "");
+		vector<double> list(N, 0.);
+		vector<double> sorted;
+		
+		FORI(i, N) cin >>list[i];
+		SORT(list);
+		
+		//copy vector
+//		vector<double> tmp(N, 0);
+//		copy(list.begin(), list.end(), tmp.begin());
+		
+//		//tmp
+//		FORI(i, list.size()) cout <<" " <<setprecision(15) <<list[i];
+//		cout <<endl;
+		
+		double mul = 1.;
+//		while(list.size() > 0) {
+//		while(true) {
+		FORI(i, 100) {
+			if (list.size() <= 0) break;
+			mul *= 3;
+			DBG2("i",i);
+//			FORE(it, list, vector<string>) {
+//			FORI(j, list.size()) {
+			for(vector<double>::iterator it = list.begin(); it != list.end();) {
+				
+//				//string to double (*it -> num)
+//				std::istringstream stm;
+//				double num;
+//				stm.str(*it);
+//				stm >>num;
+				
+				double num = fmod((*it) * mul, 3);
+				
+//				tmp *= i;
+				DBG2("  (*it)",(*it));
+				DBG2("  fmod((*it) * mul, 3)",num);
+//				tmp = fmod(tmp, 3);
+//				DBG2("  (*it)*i%3",tmp);
+				
+//				FORI(j, i) { tmp = fmod(tmp * 3, 1); DBG2("   tmp",tmp); }
+//				tmp *= 3;
+				if(1-EPS <= num and num <= 2+EPS) {
+					sorted.PB(*it);
+					it = list.erase(it);
+					DBG("    =>erased");
+				}
+				else {
+					it++;
+				}
+			}
+		}
+		FORI(j, list.size()) sorted.PB(list[j]);
+		
+		int ret = 0;
+		cout <<"Case #" <<t <<":" <<endl;
+		FORE(it, sorted, vector<double>) {
+			//cout over 6 decimals
+			cout <<setprecision(15) <<(*it) <<endl;
+		}
+	}
+	
+	/*
+	うまく計算されてくれない。0.1と0.9で0.9が先に終わる。
+	*/
+	
+	return 0;
+}

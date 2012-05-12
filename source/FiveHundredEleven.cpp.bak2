@@ -1,0 +1,163 @@
+#include <stdio.h>
+#include <time.h>
+#include <vector>
+#include <list>
+#include <set>
+#include <string>
+#include <iostream>
+#include <fstream>
+#include <algorithm>
+#include <sstream>
+#include <queue>
+#include <map>
+#include <iomanip>
+#include <cmath>
+#include <stack>
+#include <numeric>
+#include <iterator>
+#include <cstdio>
+#include <cstdlib>
+#include <climits>
+#include <cfloat>
+#include <utility>
+#include <memory>
+#include <functional>
+#include <complex>
+
+using namespace std;
+
+typedef long long LL;
+typedef vector<int> VI;
+typedef vector<string> VS;
+typedef vector<double> VD;
+typedef vector<LL> VL;
+
+#define FORE(it, c, T) for(T::iterator it = c.begin(); it != c.end(); it++)
+#define FORI(i, n) for(int i = 0; i < (n); i++)
+#define FORIS(i, s, n) for(int i = (s); i < (n); i++)
+#define CLEAR(a) memset(a, 0, sizeof(a))
+#define SORT(a) sort(a.begin(), a.end())
+#define REVERSE(a) reverse(a.begin(), a.end())
+#define PB(n) push_back(n)
+#define SZ(a) int((a).size())
+#define PI M_PI
+#define EPS 1e-13
+
+#define DEBUG 1
+#define DBG(a) if (DEBUG) cout <<"DEBUG::: " <<a <<endl;
+#define DBG2(a, b) if (DEBUG) cout <<"DEBUG::: " <<a <<"=" <<b <<endl;
+
+class FiveHundredEleven {
+public:
+//	int N;
+//	VI c;
+//	
+//	// divide and conquer
+//	int dac(int m, int n) {
+//		// n%2==0 => Fox Cielのターン => 奇数を返したい
+//		// n%2!=0 => Toastmanのターン => 偶数を返したい
+//		
+//		VI k;
+//		DBG2("m",m);
+//		DBG2("n",n);
+//		
+//		bool flag = false;
+//		int cnt = 0;
+//		FORI (i, N) {
+//			DBG2(" i",i);
+//			DBG2(" c[i]",c[i]);
+//			if (m | c[i] == 511) {
+//				DBG("  case1");
+//				flag = true;
+//			}
+//			else if (m | c[i] != m) {
+//				DBG("  case2");
+//				DBG("   =>");
+//				k.PB( dac(m | c[i], n + 1) );
+//				DBG2("    dac()", k[SZ(k)-1]);
+//				DBG("   <=");
+//			}
+//			else {
+//				DBG("  case3");
+//				cnt++;
+//			}
+//		}
+//		//if(flag) k.PB(n + cnt + 1);
+//		if(flag) {
+//			DBG2("n + cnt + 1",n + cnt + 1);
+//			k.PB(n + cnt + 1);
+//		}
+//		
+//		int ret = n % 2;
+//		FORI (i, SZ(k)) if((n + k[i]) % 2 != 0) ret = k[i];
+//		DBG2("ret",ret);
+//		return ret;
+//	}
+//	
+//	string theWinner(vector <int> c0) {
+//		
+//		c.PB(0);
+//		c.PB(511);
+//		N = SZ(c);
+//		dac(0, 0);
+//		
+//		N = SZ(c0);
+//		
+//		c.clear();
+//		FORI (i, N) c.PB(c0[i]);
+//		
+//		int all = 0;
+//		FORI (i, N) all |= c[i];
+//		if (all != 511) return (N % 2 == 0) ? "Toastman" : "Fox Ciel";
+//		
+//		return (dac(0, 0) % 2 == 0) ? "Toastman" : "Fox Ciel";
+//	}
+
+	// writer解
+	string theWinner(vector <int> c) {
+		
+		int N = SZ(c);
+		vector<vector<bool> > win(N+1, vector<bool>(512, false));
+		
+		for (int i=N; i>=0; i--) {
+ 			FORI(mask, 512) {
+ 				if(mask == 511) win[i][mask] = true;
+ 				else if(i == N) win[i][mask] = false;
+ 				else {
+ 					win[i][mask] = false;
+ 					FORI(j, N) {
+ 						int mask2 = mask | c[j];
+ 						if(mask2 != mask && !win[i+1][mask2]) win[i][mask] = true;
+ 					}
+ 					int cnt = 0;
+ 					FORI(j, N) if((mask & c[j]) == c[j]) cnt++;
+ 					if(i+1 <= cnt && !win[i+1][mask]) win[i][mask] = true;
+ 				}
+ 			}
+		}
+		
+		return (win[0][0] ? "Fox Ciel" : "Toastman");
+	}
+
+	
+// BEGIN CUT HERE
+	public:
+	void run_test(int Case) { if ((Case == -1) || (Case == 0)) test_case_0(); if ((Case == -1) || (Case == 1)) test_case_1(); if ((Case == -1) || (Case == 2)) test_case_2(); if ((Case == -1) || (Case == 3)) test_case_3(); }
+	private:
+	template <typename T> string print_array(const vector<T> &V) { ostringstream os; os << "{ "; for (typename vector<T>::const_iterator iter = V.begin(); iter != V.end(); ++iter) os << '\"' << *iter << "\","; os << " }"; return os.str(); }
+	void verify_case(int Case, const string &Expected, const string &Received) { cerr << "Test Case #" << Case << "..."; if (Expected == Received) cerr << "PASSED" << endl; else { cerr << "FAILED" << endl; cerr << "\tExpected: \"" << Expected << '\"' << endl; cerr << "\tReceived: \"" << Received << '\"' << endl; } }
+	void test_case_0() { int Arr0[] = {3, 5, 7, 9, 510}; vector <int> Arg0(Arr0, Arr0 + (sizeof(Arr0) / sizeof(Arr0[0]))); string Arg1 = "Fox Ciel"; verify_case(0, Arg1, theWinner(Arg0)); }
+	void test_case_1() { int Arr0[] = {0, 0, 0, 0}; vector <int> Arg0(Arr0, Arr0 + (sizeof(Arr0) / sizeof(Arr0[0]))); string Arg1 = "Toastman"; verify_case(1, Arg1, theWinner(Arg0)); }
+	void test_case_2() { int Arr0[] = {511}; vector <int> Arg0(Arr0, Arr0 + (sizeof(Arr0) / sizeof(Arr0[0]))); string Arg1 = "Toastman"; verify_case(2, Arg1, theWinner(Arg0)); }
+	void test_case_3() { int Arr0[] = {5, 58, 192, 256}; vector <int> Arg0(Arr0, Arr0 + (sizeof(Arr0) / sizeof(Arr0[0]))); string Arg1 = "Fox Ciel"; verify_case(3, Arg1, theWinner(Arg0)); }
+
+// END CUT HERE
+
+};
+
+// BEGIN CUT HERE
+int main() {
+	FiveHundredEleven ___test;
+	___test.run_test(-1);
+}
+// END CUT HERE

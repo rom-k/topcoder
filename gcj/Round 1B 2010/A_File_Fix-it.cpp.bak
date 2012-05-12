@@ -1,0 +1,156 @@
+#include <stdio.h>
+#include <time.h>
+#include <vector>
+#include <list>
+#include <set>
+#include <string>
+#include <iostream>
+#include <fstream>
+#include <algorithm>
+#include <sstream>
+#include <queue>
+#include <map>
+#include <iomanip>
+#include <cmath>
+#include <stack>
+#include <numeric>
+#include <iterator>
+#include <cstdio>
+#include <cstdlib>
+#include <climits>
+#include <cfloat>
+#include <utility>
+#include <memory>
+#include <functional>
+#include <complex>
+
+using namespace std;
+
+typedef long long LL;
+typedef vector<int> VI;
+typedef vector<string> VS;
+typedef vector<double> VD;
+typedef vector<LL> VL;
+
+#define FORE(it, c, T) for(T::iterator it = c.begin(); it != c.end(); it++)
+#define FORI(i, n) for(int i = 0; i < (n); i++)
+#define FORIS(i, s, n) for(int i = (s); i < (n); i++)
+#define CLEAR(a) memset(a, 0, sizeof(a))
+#define SORT(a) sort(a.begin(), a.end())
+#define PB(n) push_back(n)
+#define PI M_PI
+#define EPS 1e-13
+
+#define DEBUG 0
+#define DBG(a) if (DEBUG) cout <<"DEBUG::: " <<a <<endl;
+#define DBG2(a, b) if (DEBUG) cout <<"DEBUG::: " <<a <<"=" <<b <<endl;
+
+struct dir {
+	string name;
+	vector<dir*> c;
+	
+	dir () {
+		name = ""; c.clear();
+	}
+	
+	dir (string name0) {
+		name = name0; c.clear();
+	}
+	
+	~dir () {
+		FORI(i, c.size()) c[i]->~dir();
+	}
+	
+	void add (string path) {
+		DBG2("path",path);
+		
+		if(path.find("/") == string::npos) {
+			int i2 = -1;
+			FORI(i, c.size()) if(c[i]->name == path) i2 = i;
+			
+			if (i2 >= 0) {
+				DBG(" -> existing node");
+			}
+			else {
+				DBG2(" -> new node ",path);
+				//dir c1 = dir(path);
+				//c.PB(&c1);
+				dir* c1 = new dir(path);
+				c.PB(c1);
+			}
+		}
+		else {
+			string path_dir   = path.substr(0, path.find("/"));
+			string path_other = path.substr(path.find("/")+1);
+			//DBG2("path_dir",path_dir);
+			//DBG2("path_other",path_other);
+			
+			int i2 = -1;
+			//DBG2("         c.size()",c.size());
+			//if(DEBUG) cout <<"DEBUG:::   " <<name <<"  c.size()=" <<c.size() <<endl;
+			FORI(i, c.size()) if(c[i]->name == path_dir) i2 = i;
+			
+			if (i2 >= 0) {
+				DBG2(" (existing dir) ",path_dir);
+				//DBG2("i2",i2);
+				//DBG2("c[i2]->name",c[i2]->name);
+				//DBG2("c[i2]->c.size()",c[i2]->c.size());
+				c[i2]->add(path_other);
+			}
+			else {
+				DBG2(" (create new dir) ",path_dir);
+				//dir c1 = dir(path_dir);
+				//c.PB(&c1);
+				//c1.add(path_other);
+				dir* c1 = new dir(path_dir);
+				c.PB(c1);
+				c1->add(path_other);
+			}
+		}
+		//DBG2("       o c.size()",c.size());
+		//if(DEBUG) cout <<"DEBUG:::   " <<name <<"  c.size()=" <<c.size() <<endl;
+	}
+	
+	int count () {
+		int num = 1;
+		FORI(i, c.size()) num += c[i]->count();
+		return num;
+	}
+};
+
+int main() {
+	int T;
+	cin >>T;
+	cin.ignore();
+	
+	for(int t=1; t<=T; t++) {
+		
+		int N, M;
+		cin >>N >>M;
+		DBG2("N",N);
+		DBG2("M",M);
+		
+		dir root;
+		FORI(i, N) {
+			string a; cin >>a;
+			DBG(a);
+			root.add(a.substr(1));
+		}
+		int num_N = root.count();
+		DBG2("num_N",num_N);
+		
+		FORI(i, M) {
+			string a; cin >>a;
+			DBG(a);
+			root.add(a.substr(1));
+		}
+		int num_M = root.count();
+		DBG2("num_M",num_M);
+		
+		int ret = num_M - num_N;
+		cout <<"Case #" <<t <<": " <<ret <<endl;
+		//printf("Case #%d: %.0lf\n", t, ret);
+	}
+	
+	return 0;
+}
