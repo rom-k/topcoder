@@ -45,7 +45,7 @@ typedef vector<LL> VL;
 #define EPS 1e-13
 #define INF 0x7f7f7f7f
 
-#define DEBUG 0
+#define DEBUG 1
 #define DBG(a)        if(DEBUG) cout <<"DEBUG::: " <<a <<endl;
 #define DBG2(a, b)    if(DEBUG) cout <<"DEBUG::: " <<a <<":" <<b <<endl;
 #define DBG3(a, b, c) if(DEBUG) cout <<"DEBUG::: " <<a <<":" <<b <<":" <<c <<endl;
@@ -56,9 +56,17 @@ int NN;
 int dfs(int i, string need, int skipped) {
     if (i >= NN) {
         if (SZ(need) > skipped) {
-            return INF;
+            DBG2("i      ",i);
+            DBG2("need   ",need);
+            DBG2("skipped",skipped);
+            DBG( "       :INF");
+            return 50;
         }
         else {
+            DBG2("i      ",i);
+            DBG2("need   ",need);
+            DBG2("skipped",skipped);
+            DBG2("       ", SZ(need));
             return SZ(need);
         }
     }
@@ -66,16 +74,22 @@ int dfs(int i, string need, int skipped) {
         int ret = dfs(i+1, need, skipped+1);
         FORI(j, SZ(need)) {
             if(SS[i] == need[j]
-            and j <= skipped) {
+            or j <= skipped) {
                 ret = min(ret, dfs(i+1, need.substr(j+1), 0) + j);
             }
         }
+        DBG2("i      ",i);
+        DBG2("need   ",need);
+        DBG2("skipped",skipped);
+        DBG2("       ", ret);
         return ret;
     }
 }
 
 int replace(int N, char S[]) {
     NN = N;
+//    SS = "";
+//    FORI(i,N) SS+=S[i];
     SS = S;
     return dfs(0, "IJPC", 0);
 }
