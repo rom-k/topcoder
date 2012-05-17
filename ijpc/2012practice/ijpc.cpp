@@ -66,7 +66,8 @@ int dfs(int i, string need, int skipped) {
         int ret = dfs(i+1, need, skipped+1);
         FORI(j, SZ(need)) {
             if(SS[i] == need[j]
-            and j <= skipped) {
+            and j <= skipped
+            and j < ret) {
                 ret = min(ret, dfs(i+1, need.substr(j+1), 0) + j);
             }
         }
