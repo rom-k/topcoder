@@ -15,13 +15,13 @@ void heapify(int i) {
         swap(h[i], h[(i-1)/2]);
         heapify((i-1)/2);
     }
-    else if (2*i+1 < s and h[2*i+1] < h[i] and h[2*i+1] < h[2*i+2]) {
-        swap(h[i], h[2*i+1]);
-        heapify(2*i+1);
-    }
-    else if (2*i+2 < s and h[2*i+2] < h[i]) {
+    else if (2*i+2 < s and h[2*i+2] < h[i] and h[2*i+2] < h[2*i+1])  {
         swap(h[i], h[2*i+2]);
         heapify(2*i+2);
+    }
+    else if (2*i+1 < s and h[2*i+1] < h[i]) {
+        swap(h[i], h[2*i+1]);
+        heapify(2*i+1);
     }
 }
 
