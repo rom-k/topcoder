@@ -1,5 +1,5 @@
 #TopCoder ContestApplet Preferences File
-#Sat May 12 16:46:33 JST 2012
+#Sat May 12 16:49:57 JST 2012
 com.topcoder.client.contestApplet.common.LocalPreferences.menufont=Arial
 com.topcoder.client.contestApplet.common.LocalPreferences.menufontsize=10
 com.topcoder.client.contestApplet.common.LocalPreferences.commonclasspath=/home/kondo/topcoder/plugin/TZTester.jar\:/home/kondo/topcoder/plugin/FileEdit.jar
@@ -162,8 +162,8 @@ com.topcoder.client.contentApplet.panels.ChatPanel.moderatedChatSpeakerFore=-1
 com.topcoder.client.contentApplet.panels.ChatPanel.moderatedChatSpeakerBack=-16777216
 com.topcoder.client.contentApplet.panels.ChatPanel.moderatedChatQuestionBack=-16777216
 com.topcoder.jmaContestApplet.ContestApplet.disableEnterExitMsgs=true
-com.topcoder.jmaContestApplet.frames.codingframe.location=269\:23
-com.topcoder.jmaContestApplet.frames.codingframe.size=760\:717
+com.topcoder.jmaContestApplet.frames.codingframe.location=269\:25
+com.topcoder.jmaContestApplet.frames.codingframe.size=755\:717
 com.topcoder.jmaContestApplet.frames.codingframe.dividerloc=379
 fileeditor.config.dirName=/home/kondo/topcoder/source
 fileeditor.config.fileName=problem

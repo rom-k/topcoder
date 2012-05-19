@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <iostream>
+#include <set>
+using namespace std;
+
+main () {
+    set<string> user;
+    int sum = 0;
+
+    char buf[105];
+    while(cin.getline(buf, sizeof(buf))) {
+//        cout <<"DEBUG::: " <<buf <<endl;
+        if (buf[0] == '+') user.insert(buf);
+        else if (buf[0] == '-') {
+            buf[0] = '+';
+            user.erase(buf);
+        }
+        else {
+            int i=0;
+            while (buf[i] != ':') i++;
+            int j=i;
+            while (buf[j] != '\0') j++;
+//            cout <<"DEBUG:::  j-i-1=" <<j-i-1 <<endl;
+//            cout <<"DEBUG:::  num  =" <<user.size() <<endl;
+            sum += user.size() * (j-i-1);
+        }
+    }
+
+    cout <<sum <<endl;
+}
