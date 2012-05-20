@@ -50,36 +50,34 @@ typedef vector<LL> VL;
 #define DBG2(a, b)    if(DEBUG) cout <<"DEBUG::: " <<a <<":" <<b <<endl;
 #define DBG3(a, b, c) if(DEBUG) cout <<"DEBUG::: " <<a <<":" <<b <<":" <<c <<endl;
 
-bool check(int N, char S[], string C) {
-    int x = 0;
-    FORI(i,N) {
-        if (C[x] == '.'
-        or  C[x] == S[i]) {
-            x++;
+string SS;
+int NN;
+
+int dfs(int i, string need, int skipped) {
+    if (i >= NN) {
+        if (SZ(need) > skipped) {
+            return INF;
         }
-        if (x >= 4) {
-            return true;
+        else {
+            return SZ(need);
         }
     }
-    return false;
+    else {
+        int ret = dfs(i+1, need, skipped+1);
+        FORI(j, SZ(need)) {
+            if(SS[i] == need[j]
+            and j <= skipped
+            and j < ret) {
+                ret = min(ret, dfs(i+1, need.substr(j+1), 0) + j);
+            }
+        }
+        return ret;
+    }
 }
 
 int replace(int N, char S[]) {
-    if(check(N, S, "IJPC")) return 0;
-    if(check(N, S, ".JPC")) return 1;
-    if(check(N, S, "I.PC")) return 1;
-    if(check(N, S, "IJ.C")) return 1;
-    if(check(N, S, "IJP.")) return 1;
-    if(check(N, S, "..PC")) return 2;
-    if(check(N, S, ".J.C")) return 2;
-    if(check(N, S, ".JP.")) return 2;
-    if(check(N, S, "I..C")) return 2;
-    if(check(N, S, "I.P.")) return 2;
-    if(check(N, S, "IJ..")) return 2;
-    if(check(N, S, "...C")) return 3;
-    if(check(N, S, "..P.")) return 3;
-    if(check(N, S, ".J..")) return 3;
-    if(check(N, S, "I...")) return 3;
-    return 4;
+    NN = N;
+    SS = S;
+    return dfs(0, "IJPC", 0);
 }
 

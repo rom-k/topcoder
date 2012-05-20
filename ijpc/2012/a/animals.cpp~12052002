@@ -1,0 +1,43 @@
+#include "animals.h"
+#include <set>
+#include <iostream> //DEBUG
+using namespace std;
+
+#define MAX_N 100000
+set<pair<int,int> > n[MAX_N];
+
+void _remove(int v) {
+}
+
+void init(int N, int E[][2]) {
+    for (int i=0;i<N;i++) {
+        n[E[i][0]].insert(pair<int,int> (E[i][1], -1));
+        n[E[i][1]].insert(pair<int,int> (E[i][0], -1));
+    }
+
+    int num = 0;
+    while (N <= num) {
+        for (int i=0;i<N;i++) {
+            set<pair<int,int> >::iterator it;
+            for (it=n[i].begin();it!=n[i].end();it++) {
+                if ((*it).second > 0) continue;
+
+                int nei = (*it).first;
+                int sum = 1;
+                set<pair<int,int> >::iterator it2;
+                for (it2=n[nei].begin();it2!=n[nei].end();it2++) {
+                    if ((*it).first != i and (*it).second < 0) break;
+                    sum += (*it).second;
+                }
+                if (it2!=n[nei].end()) break;
+
+                (*it).second = sum;
+            }
+            if (it==n[i].end()) num++;
+        }
+    }
+}
+
+int query(int v) {
+    return 1;
+}

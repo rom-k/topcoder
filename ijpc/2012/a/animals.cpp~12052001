@@ -1,0 +1,29 @@
+#include "animals.h"
+#include <set>
+#include <iostream> //DEBUG
+using namespace std;
+
+#define MAX_N 100000
+//struct _node {
+//    set<pair<int, int> > e;
+//};
+//int N;
+//_node n[MAX_N];
+set<pair<int,int> > n[MAX_N];
+
+void _remove(int v) {
+}
+
+void init(int N, int E[][2]) {
+//    N = N0;
+    for (int i=0;i<N;i++) {
+//        G[E[i][0]].insert(E[i][1]);
+//        G[E[i][1]].insert(E[i][0]);
+        n[E[i][0]].insert(pair<int,int> (E[i][1], -1));
+        n[E[i][1]].insert(pair<int,int> (E[i][0], -1));
+    }
+}
+
+int query(int v) {
+    return 1;
+}
