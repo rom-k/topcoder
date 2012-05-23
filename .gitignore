@@ -2,6 +2,7 @@ devquiz/slidingpuzzle/baretail.exe.lnk
 gcj/Qualification Round 2012/_ref_D-large/
 mypc/
 other/ba_cy/
-a.out
+?.out
 *.bak
 *.bak?
+*~[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]
