@@ -6,7 +6,6 @@ using namespace std;
 #define MAX_N 100000
 int N;
 struct cnode {
-    int id;
     int p;
     int size;
     set<int> cs;
@@ -31,28 +30,25 @@ void update_size_parent(int id, int red) {
 }
 
 void remove_node(int id) {
-    if (n[id].p > 0)
-        n[n[id].p].cs.erase(id);
-
-    int red = 1;
     for (set<int>::iterator it=n[id].cs.begin();it!=n[id].cs.end();it++) {
         int cid = *it;
         n[cid].p = -1;
-        red += n[cid].size;
     }
-
-    update_size_parent(n[id].p, red);
-
-    n[id].p = -1;
-    n[id].size = 1;
     n[id].cs.clear();
+
+    if (n[id].p > 0) {
+        n[n[id].p].cs.erase(id);
+        update_size_parent(n[id].p, n[id].size);
+    }
+    n[id].p = -1;
+
+    n[id].size = 1;
 }
 
 void init(int N0, int E[][2]) {
     N = N0;
     for (int i=0;i<N;i++) {
         cnode n1;
-        n1.id = i;
         n1.p = -1;
         n.push_back(n1);
     }
