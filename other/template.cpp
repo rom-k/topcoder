@@ -50,25 +50,21 @@ typedef vector<LL> VL;
 #define DBG2(a, b) if (DEBUG) cout <<"DEBUG::: " <<a <<"=" <<b <<endl;
 
 int main() {
-    int T;
+    int T = 1;
     cin >>T;
     cin.ignore();
-    
+
     for(int t=1; t<=T; t++) {
-        
         int N;
-        cin >>N;
-        //getline(cin, a);
-        
         vector<int> ary(N, 0);
+        cin >>N;
         FORI(i, N) cin >>ary[i];
+
         
-        
-        
+
         int ret = 0;
         cout <<"Case #" <<t <<": " <<ret <<endl;
         //printf("Case #%d: %.0lf\n", t, ret);
     }
-    
     return 0;
 }

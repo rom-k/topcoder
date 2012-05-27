@@ -3,7 +3,10 @@ gcj/Qualification Round 2012/_ref_D-large/
 mypc/
 other/ba_cy/
 local/
+plugin/
 in
+in[0-9]
+in.[0-9]
 do.sh
 do.bat
 tmp
