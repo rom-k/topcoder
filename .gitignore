@@ -2,7 +2,23 @@ devquiz/slidingpuzzle/baretail.exe.lnk
 gcj/Qualification Round 2012/_ref_D-large/
 mypc/
 other/ba_cy/
-?.out
+local/
+*.in
+*.out
+*.exe
+*.log
+*.txt
+*.pdf
+*.zip
+*.html
+*.bk.cpp
+*.in[0-9]
+*.in.[0-9]
+*.out[0-9]
+*.out.[0-9]
+*.expect.[0-9]
+*.bk
 *.bak
-*.bak?
+*.bak[0-9]
 *~[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]
+
