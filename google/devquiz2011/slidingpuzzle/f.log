@@ -1,0 +1,703 @@
+DUMP: o ===================================0  3
+g: ======================O0===STU===YZN
+n: ===================================0 (f=3, t=) / 0 & 0
+  (==================================0Z (f=5, t=R) new!
+  (=============================0=====U (f=10, t=D) new!
+x: ======================O0===STU===YZN (f=41, t=) / 0 & 0
+  (======================0O===STU===YZN (f=40, t=L) new!
+  (======================OU===ST0===YZN (f=48, t=D) new!
+  (=================0====OI===STU===YZN (f=99999, t=U) new!
+n: ==================================0Z (f=5, t=R) / 1 & 1
+  (=================================0YZ (f=8, t=RR) new!
+  (============================0=====TZ (f=18, t=DR) new!
+x: ======================0O===STU===YZN (f=40, t=L) / 2 & 1
+  (=====================0MO===STU===YZN (f=99999, t=LL) new!
+  (======================TO===S0U===YZN (f=53, t=LD) new!
+  (================0=====HO===STU===YZN (f=99999, t=LU) new!
+n: =================================0YZ (f=8, t=RR) / 2 & 2
+  (================================0XYZ (f=99999, t=RRR) new!
+  (===========================0=====SYZ (f=27, t=DRR) new!
+x: ======================OU===ST0===YZN (f=48, t=D) / 4 & 2
+  (======================OU===S0T===YZN (f=51, t=DL) new!
+  (======================OU===STN===YZ0 (f=31, t=DD) new!
+n: =============================0=====U (f=10, t=D) / 3 & 3
+  (============================0T=====U (f=13, t=RD) new!
+  (=======================0=====O=====U (f=29, t=DD) new!
+x: ======================OU===STN===YZ0 (f=31, t=DD) / 5 & 3
+  (======================OU===STN===Y0Z (f=33, t=DDL) new!
+n: ============================0T=====U (f=13, t=RD) / 4 & 4
+  (===========================0ST=====U (f=17, t=RRD) new!
+  (============================ZT====0U (f=20, t=URD) new!
+  (======================0=====NT=====U (f=14, t=DRD) new!
+x: ======================OU===STN===Y0Z (f=33, t=DDL) / 5 & 4
+  (======================OU===STN===0YZ (f=36, t=DDLL) new!
+  (======================OU===S0N===YTZ (f=46, t=DDLU) new!
+n: ======================0=====NT=====U (f=14, t=DRD) / 6 & 5
+  (======================O0====NT=====U (f=12, t=LDRD) new!
+  (=====================0M=====NT=====U (f=99999, t=RDRD) new!
+  (================0=====H=====NT=====U (f=99999, t=DDRD) new!
+x: ======================OU===STN===0YZ (f=36, t=DDLL) / 6 & 5
+  (======================OU===STN==0XYZ (f=99999, t=DDLLL) new!
+  (======================OU===0TN===SYZ (f=55, t=DDLLU) new!
+n: ======================O0====NT=====U (f=12, t=LDRD) / 8 & 6
+  (======================OT====N0=====U (f=25, t=ULDRD) new!
+  (=================0====OI====NT=====U (f=99999, t=DLDRD) new!
+x: ======================OU===S0N===YTZ (f=46, t=DDLU) / 7 & 6
+  (======================OU===SN0===YTZ (f=44, t=DDLUR) new!
+  (======================OU===0SN===YTZ (f=50, t=DDLUL) new!
+  (======================0U===SON===YTZ (f=59, t=DDLUU) new!
+n: ===========================0ST=====U (f=17, t=RRD) / 9 & 7
+  (==========================0RST=====U (f=99999, t=RRRD) new!
+  (===========================YST===0=U (f=30, t=URRD) new!
+  (=====================0=====MST=====U (f=99999, t=DRRD) new!
+x: ======================OU===SN0===YTZ (f=44, t=DDLUR) / 9 & 7
+  (======================OU===SNZ===YT0 (f=51, t=DDLURD) new!
+  (======================O0===SNU===YTZ (f=39, t=DDLURU) new!
+n: ============================0=====TZ (f=18, t=DR) / 11 & 8
+  (============================U0====TZ (f=20, t=LDR) new!
+  (===========================0S=====TZ (f=22, t=RDR) new!
+  (======================0=====N=====TZ (f=19, t=DDR) new!
+x: ======================O0===SNU===YTZ (f=39, t=DDLURU) / 10 & 8
+  (======================0O===SNU===YTZ (f=38, t=DDLURUL) new!
+  (=================0====OI===SNU===YTZ (f=99999, t=DDLURUU) new!
+n: ======================0=====N=====TZ (f=19, t=DDR) / 13 & 9
+1091 DDLURULDDR
+g: ==============FGHI==L=NO==0RST==XYZU
+n: ==========================0RST=====U (f=4, t=RRRD) / 13 & 9
+1554 RRRD
+DUMP: o ==========================0RST=====U RRRD 99999
+DUMP: c ==================================0Z R 15
+DUMP: c ===========================0ST=====U RRD 99999
+g: ==============FGIH==L=ON==R==0==XYZU
+n: ================================0XYZ (f=15, t=RRR) / 13 & 9
+  (===============================0WXYZ (f=99999, t=RRRR) new!
+  (==========================0=====RXYZ (f=53, t=DRRR) new!
+x: ==============FGIH==L=ON==R==0==XYZU (f=19, t=) / 0 & 0
+  (==============FGIH==L=ON==R=0T==XYZU (f=99999, t=L) new!
+  (==============FGIH==L=ON==R==U==XYZ0 (f=14, t=D) new!
+  (==============FGIH==L=O0==R==N==XYZU (f=38, t=U) new!
+n: ============================U0====TZ (f=20, t=LDR) / 14 & 10
+  (============================UZ====T0 (f=99999, t=ULDR) new!
+  (=======================0====UO====TZ (f=99999, t=DLDR) new!
+x: ==============FGIH==L=ON==R==U==XYZ0 (f=14, t=D) / 2 & 1
+  (==============FGIH==L=ON==R==U==XY0Z (f=16, t=DL) new!
+n: ============================ZT====0U (f=20, t=URD) / 15 & 11
+  (============================ZT====U0 (f=99999, t=LURD) new!
+  (============================ZT===0YU (f=99999, t=RURD) new!
+x: ==============FGIH==L=ON==R==U==XY0Z (f=16, t=DL) / 2 & 2
+  (==============FGIH==L=ON==R==U==X0YZ (f=19, t=DLL) new!
+  (==============FGIH==L=ON==R=0U==XYTZ (f=99999, t=DLU) new!
+n: ===========================0S=====TZ (f=22, t=RDR) / 16 & 12
+  (==========================0RS=====TZ (f=99999, t=RRDR) new!
+  (===========================YS====0TZ (f=99999, t=URDR) new!
+  (=====================0=====MS=====TZ (f=99999, t=DRDR) new!
+x: ==============FGIH==L=ON==R==U==X0YZ (f=19, t=DLL) / 3 & 3
+  (==============FGIH==L=ON==R==U==0XYZ (f=23, t=DLLL) new!
+  (==============FGIH==L=ON==R0=U==XSYZ (f=99999, t=DLLU) new!
+n: ======================OT====N0=====U (f=25, t=ULDRD) / 18 & 13
+  (======================OT====0N=====U (f=99999, t=RULDRD) new!
+  (======================OT====NU=====0 (f=99999, t=UULDRD) new!
+x: ==============FGIH==L=ON==R==U==0XYZ (f=23, t=DLLL) / 4 & 4
+  (==============FGIH==L=ON==R==U=0WXYZ (f=99999, t=DLLLL) new!
+  (==============FGIH==L=ON==0==U==RXYZ (f=54, t=DLLLU) new!
+n: ===========================0=====SYZ (f=27, t=DRR) / 19 & 14
+  (===========================T0====SYZ (f=99999, t=LDRR) new!
+  (==========================0R=====SYZ (f=99999, t=RDRR) new!
+  (=====================0=====M=====SYZ (f=99999, t=DDRR) new!
+x: ==============FGIH==L=O0==R==N==XYZU (f=38, t=U) / 5 & 5
+  (==============FGIH==L=0O==R==N==XYZU (f=37, t=UL) new!
+  (==============FGI0==L=OH==R==N==XYZU (f=69, t=UU) new!
+n: =======================0=====O=====U (f=29, t=DD) / 21 & 15
+  (======================0N=====O=====U (f=32, t=RDD) new!
+  (=================0=====I=====O=====U (f=64, t=DDD) new!
+x: ==============FGIH==L=0O==R==N==XYZU (f=37, t=UL) / 6 & 6
+  (==============FGIH==L0MO==R==N==XYZU (f=99999, t=ULL) new!
+  (==============FGIH==L=TO==R=0N==XYZU (f=99999, t=ULD) new!
+  (==============FG0H==L=IO==R==N==XYZU (f=56, t=ULU) new!
+n: ===========================YST===0=U (f=30, t=URRD) / 22 & 16
+  (===========================YST===Z0U (f=99999, t=LURRD) new!
+  (===========================YST==0X=U (f=99999, t=RURRD) new!
+x: ==============FGIH==L=ON==0==U==RXYZ (f=54, t=DLLLU) / 8 & 7
+  (==============FGIH==L=ON==S0=U==RXYZ (f=99999, t=DLLLUR) new!
+  (==============FGIH==L=ON=0Q==U==RXYZ (f=99999, t=DLLLUL) new!
+  (==============FGIH==0=ON==L==U==RXYZ (f=103, t=DLLLUU) new!
+n: ======================0N=====O=====U (f=32, t=RDD) / 23 & 17
+  (=====================0MN=====O=====U (f=99999, t=RRDD) new!
+  (======================TN====0O=====U (f=99999, t=URDD) new!
+  (================0=====HN=====O=====U (f=51, t=DRDD) new!
+x: ==============FG0H==L=IO==R==N==XYZU (f=56, t=ULU) / 10 & 8
+  (==============FGH0==L=IO==R==N==XYZU (f=52, t=ULUR) new!
+  (==============F0GH==L=IO==R==N==XYZU (f=65, t=ULUL) new!
+  (==========0===FGBH==L=IO==R==N==XYZU (f=99999, t=ULUU) new!
+n: ======================0=====N=====TZ (f=34, t=DDR) / 25 & 18
+  (======================O0====N=====TZ (f=99999, t=LDDR) new!
+  (=====================0M=====N=====TZ (f=99999, t=RDDR) new!
+  (================0=====H=====N=====TZ (f=99999, t=DDDR) new!
+x: ==============FGH0==L=IO==R==N==XYZU (f=52, t=ULUR) / 12 & 9
+  (==============FGHO==L=I0==R==N==XYZU (f=65, t=ULURD) new!
+  (===========0==FGHC==L=IO==R==N==XYZU (f=99999, t=ULURU) new!
+n: ================0=====HN=====O=====U (f=51, t=DRDD) / 27 & 19
+  (================I0====HN=====O=====U (f=47, t=LDRDD) new!
+  (===============0G=====HN=====O=====U (f=60, t=RDRDD) new!
+  (==========0=====B=====HN=====O=====U (f=99999, t=DDRDD) new!
+x: ==============F0GH==L=IO==R==N==XYZU (f=65, t=ULUL) / 13 & 10
+  (==============0FGH==L=IO==R==N==XYZU (f=79, t=ULULL) new!
+  (==============FMGH==L0IO==R==N==XYZU (f=99999, t=ULULD) new!
+  (=========0====FAGH==L=IO==R==N==XYZU (f=99999, t=ULULU) new!
+n: ================I0====HN=====O=====U (f=47, t=LDRDD) / 29 & 20
+  (================IN====H0=====O=====U (f=60, t=ULDRDD) new!
+  (===========0====IC====HN=====O=====U (f=99999, t=DLDRDD) new!
+x: ==============FGHO==L=I0==R==N==XYZU (f=65, t=ULURD) / 15 & 11
+  (==============FGHO==L=0I==R==N==XYZU (f=63, t=ULURDL) new!
+  (==============FGHO==L=IN==R==0==XYZU (f=48, t=ULURDD) new!
+n: ==========================0=====RXYZ (f=53, t=DRRR) / 30 & 21
+  (==========================S0====RXYZ (f=99999, t=LDRRR) new!
+  (=========================0Q=====RXYZ (f=99999, t=RDRRR) new!
+  (====================0=====L=====RXYZ (f=102, t=DDRRR) new!
+x: ==============FGHO==L=IN==R==0==XYZU (f=48, t=ULURDD) / 16 & 12
+  (==============FGHO==L=IN==R=0T==XYZU (f=99999, t=ULURDDL) new!
+  (==============FGHO==L=IN==R==U==XYZ0 (f=43, t=ULURDDD) new!
+n: ===============0G=====HN=====O=====U (f=60, t=RDRDD) / 32 & 22
+  (==============0FG=====HN=====O=====U (f=74, t=RRDRDD) new!
+  (===============MG====0HN=====O=====U (f=99999, t=URDRDD) new!
+  (=========0=====AG=====HN=====O=====U (f=99999, t=DRDRDD) new!
+x: ==============FGHO==L=IN==R==U==XYZ0 (f=43, t=ULURDDD) / 17 & 13
+  (==============FGHO==L=IN==R==U==XY0Z (f=45, t=ULURDDDL) new!
+n: ================IN====H0=====O=====U (f=60, t=ULDRDD) / 34 & 23
+  (================IN====0H=====O=====U (f=58, t=RULDRDD) new!
+  (================IN====HO=====0=====U (f=43, t=UULDRDD) new!
+x: ==============FGHO==L=IN==R==U==XY0Z (f=45, t=ULURDDDL) / 17 & 14
+  (==============FGHO==L=IN==R==U==X0YZ (f=48, t=ULURDDDLL) new!
+  (==============FGHO==L=IN==R=0U==XYTZ (f=99999, t=ULURDDDLU) new!
+n: ================IN====HO=====0=====U (f=43, t=UULDRDD) / 35 & 24
+  (================IN====HO====0T=====U (f=99999, t=RUULDRDD) new!
+  (================IN====HO=====U=====0 (f=44, t=UUULDRDD) new!
+x: ==============FGHO==L=IN==R==U==X0YZ (f=48, t=ULURDDDLL) / 18 & 15
+  (==============FGHO==L=IN==R==U==0XYZ (f=52, t=ULURDDDLLL) new!
+  (==============FGHO==L=IN==R0=U==XSYZ (f=99999, t=ULURDDDLLU) new!
+n: ================IN====HO=====U=====0 (f=44, t=UUULDRDD) / 36 & 25
+  (================IN====HO=====U====0Z (f=46, t=RUUULDRDD) new!
+x: ==============FGHO==L=IN==R==U==0XYZ (f=52, t=ULURDDDLLL) / 19 & 16
+  (==============FGHO==L=IN==R==U=0WXYZ (f=99999, t=ULURDDDLLLL) new!
+  (==============FGHO==L=IN==0==U==RXYZ (f=83, t=ULURDDDLLLU) new!
+n: ================IN====HO=====U====0Z (f=46, t=RUUULDRDD) / 36 & 26
+  (================IN====HO=====U===0YZ (f=49, t=RRUUULDRDD) new!
+  (================IN====HO====0U====TZ (f=99999, t=DRUUULDRDD) new!
+x: ==============FGHO==L=0I==R==N==XYZU (f=63, t=ULURDL) / 20 & 17
+  (==============FGHO==L0MI==R==N==XYZU (f=99999, t=ULURDLL) new!
+  (==============FGHO==L=TI==R=0N==XYZU (f=99999, t=ULURDLD) new!
+  (==============FG0O==L=HI==R==N==XYZU (f=94, t=ULURDLU) new!
+n: ================IN====HO=====U===0YZ (f=49, t=RRUUULDRDD) / 37 & 27
+  (================IN====HO=====U==0XYZ (f=53, t=RRRUUULDRDD) new!
+  (================IN====HO===0=U===SYZ (f=99999, t=DRRUUULDRDD) new!
+x: ==============FGI0==L=OH==R==N==XYZU (f=69, t=UU) / 22 & 18
+  (==============FG0I==L=OH==R==N==XYZU (f=67, t=UUL) new!
+  (===========0==FGIC==L=OH==R==N==XYZU (f=99999, t=UUU) new!
+n: ================IN====HO=====U==0XYZ (f=53, t=RRRUUULDRDD) / 38 & 28
+  (================IN====HO=====U=0WXYZ (f=99999, t=RRRRUUULDRDD) new!
+  (================IN====HO==0==U==RXYZ (f=84, t=DRRRUUULDRDD) new!
+x: ==============FG0I==L=OH==R==N==XYZU (f=67, t=UUL) / 23 & 19
+  (==============F0GI==L=OH==R==N==XYZU (f=76, t=UULL) new!
+  (==============FGOI==L=0H==R==N==XYZU (f=80, t=UULD) new!
+  (==========0===FGBI==L=OH==R==N==XYZU (f=99999, t=UULU) new!
+n: ================IN====0H=====O=====U (f=58, t=RULDRDD) / 39 & 29
+  (================IN===0MH=====O=====U (f=99999, t=RRULDRDD) new!
+  (================IN====TH====0O=====U (f=99999, t=URULDRDD) new!
+  (================0N====IH=====O=====U (f=89, t=DRULDRDD) new!
+x: ==============F0GI==L=OH==R==N==XYZU (f=76, t=UULL) / 25 & 20
+  (==============0FGI==L=OH==R==N==XYZU (f=90, t=UULLL) new!
+  (==============FMGI==L0OH==R==N==XYZU (f=99999, t=UULLD) new!
+  (=========0====FAGI==L=OH==R==N==XYZU (f=99999, t=UULLU) new!
+n: =================0=====I=====O=====U (f=64, t=DDD) / 41 & 30
+  (================0H=====I=====O=====U (f=62, t=RDDD) new!
+  (===========0=====C=====I=====O=====U (f=99999, t=DDDD) new!
+x: ==============0FGH==L=IO==R==N==XYZU (f=79, t=ULULL) / 27 & 21
+  (=============0EFGH==L=IO==R==N==XYZU (f=99999, t=ULULLL) new!
+  (==============LFGH==0=IO==R==N==XYZU (f=128, t=ULULLD) new!
+  (========0=====9FGH==L=IO==R==N==XYZU (f=99999, t=ULULLU) new!
+n: ================0H=====I=====O=====U (f=62, t=RDDD) / 42 & 31
+  (===============0GH=====I=====O=====U (f=71, t=RRDDD) new!
+  (================NH====0I=====O=====U (f=75, t=URDDD) new!
+  (==========0=====BH=====I=====O=====U (f=99999, t=DRDDD) new!
+x: ==============FGOI==L=0H==R==N==XYZU (f=80, t=UULD) / 29 & 22
+  (==============FGOI==L=H0==R==N==XYZU (f=76, t=UULDR) new!
+  (==============FGOI==L0MH==R==N==XYZU (f=99999, t=UULDL) new!
+  (==============FGOI==L=TH==R=0N==XYZU (f=99999, t=UULDD) new!
+n: ===============0GH=====I=====O=====U (f=71, t=RRDDD) / 44 & 32
+  (==============0FGH=====I=====O=====U (f=85, t=RRRDDD) new!
+  (===============MGH===0=I=====O=====U (f=99999, t=URRDDD) new!
+  (=========0=====AGH=====I=====O=====U (f=99999, t=DRRDDD) new!
+x: ==============FGOI==L=H0==R==N==XYZU (f=76, t=UULDR) / 31 & 23
+  (==============FGOI==L=HN==R==0==XYZU (f=59, t=UULDRD) new!
+  (==============FGO0==L=HI==R==N==XYZU (f=95, t=UULDRU) new!
+n: ==============0FG=====HN=====O=====U (f=74, t=RRDRDD) / 46 & 33
+  (=============0EFG=====HN=====O=====U (f=99999, t=RRRDRDD) new!
+  (==============LFG===0=HN=====O=====U (f=123, t=URRDRDD) new!
+  (========0=====9FG=====HN=====O=====U (f=99999, t=DRRDRDD) new!
+x: ==============FGOI==L=HN==R==0==XYZU (f=59, t=UULDRD) / 32 & 24
+  (==============FGOI==L=HN==R=0T==XYZU (f=99999, t=UULDRDL) new!
+  (==============FGOI==L=HN==R==U==XYZ0 (f=54, t=UULDRDD) new!
+n: ================NH====0I=====O=====U (f=75, t=URDDD) / 48 & 34
+  (================NH====I0=====O=====U (f=71, t=LURDDD) new!
+  (================NH===0MI=====O=====U (f=99999, t=RURDDD) new!
+  (================NH====TI====0O=====U (f=99999, t=UURDDD) new!
+x: ==============FGOI==L=HN==R==U==XYZ0 (f=54, t=UULDRDD) / 33 & 25
+  (==============FGOI==L=HN==R==U==XY0Z (f=56, t=UULDRDDL) new!
+n: ================NH====I0=====O=====U (f=71, t=LURDDD) / 50 & 35
+  (================NH====IO=====0=====U (f=54, t=ULURDDD) new!
+  (================N0====IH=====O=====U (f=90, t=DLURDDD) new!
+x: ==============FGOI==L=HN==R==U==XY0Z (f=56, t=UULDRDDL) / 33 & 26
+  (==============FGOI==L=HN==R==U==X0YZ (f=59, t=UULDRDDLL) new!
+  (==============FGOI==L=HN==R=0U==XYTZ (f=99999, t=UULDRDDLU) new!
+n: ================NH====IO=====0=====U (f=54, t=ULURDDD) / 51 & 36
+  (================NH====IO====0T=====U (f=99999, t=RULURDDD) new!
+  (================NH====IO=====U=====0 (f=55, t=UULURDDD) new!
+x: ==============FGOI==L=HN==R==U==X0YZ (f=59, t=UULDRDDLL) / 34 & 27
+  (==============FGOI==L=HN==R==U==0XYZ (f=63, t=UULDRDDLLL) new!
+  (==============FGOI==L=HN==R0=U==XSYZ (f=99999, t=UULDRDDLLU) new!
+n: ================NH====IO=====U=====0 (f=55, t=UULURDDD) / 52 & 37
+  (================NH====IO=====U====0Z (f=57, t=RUULURDDD) new!
+x: ==============FGOI==L=HN==R==U==0XYZ (f=63, t=UULDRDDLLL) / 35 & 28
+  (==============FGOI==L=HN==R==U=0WXYZ (f=99999, t=UULDRDDLLLL) new!
+  (==============FGOI==L=HN==0==U==RXYZ (f=94, t=UULDRDDLLLU) new!
+n: ================NH====IO=====U====0Z (f=57, t=RUULURDDD) / 52 & 38
+  (================NH====IO=====U===0YZ (f=60, t=RRUULURDDD) new!
+  (================NH====IO====0U====TZ (f=99999, t=DRUULURDDD) new!
+x: ==============FGHO==L=IN==0==U==RXYZ (f=83, t=ULURDDDLLLU) / 36 & 29
+  (==============FGHO==L=IN==S0=U==RXYZ (f=99999, t=ULURDDDLLLUR) new!
+  (==============FGHO==L=IN=0Q==U==RXYZ (f=99999, t=ULURDDDLLLUL) new!
+  (==============FGHO==0=IN==L==U==RXYZ (f=132, t=ULURDDDLLLUU) new!
+n: ================NH====IO=====U===0YZ (f=60, t=RRUULURDDD) / 53 & 39
+  (================NH====IO=====U==0XYZ (f=64, t=RRRUULURDDD) new!
+  (================NH====IO===0=U===SYZ (f=99999, t=DRRUULURDDD) new!
+x: ==============0FGI==L=OH==R==N==XYZU (f=90, t=UULLL) / 38 & 30
+  (=============0EFGI==L=OH==R==N==XYZU (f=99999, t=UULLLL) new!
+  (==============LFGI==0=OH==R==N==XYZU (f=139, t=UULLLD) new!
+  (========0=====9FGI==L=OH==R==N==XYZU (f=99999, t=UULLLU) new!
+n: ================NH====IO=====U==0XYZ (f=64, t=RRRUULURDDD) / 54 & 40
+  (================NH====IO=====U=0WXYZ (f=99999, t=RRRRUULURDDD) new!
+  (================NH====IO==0==U==RXYZ (f=95, t=DRRRUULURDDD) new!
+x: ==============FG0O==L=HI==R==N==XYZU (f=94, t=ULURDLU) / 40 & 31
+  (==============FGO0==L=HI==R==N==XYZU (f=97, t=ULURDLUR) 
+  (==============F0GO==L=HI==R==N==XYZU (f=103, t=ULURDLUL) new!
+  (==========0===FGBO==L=HI==R==N==XYZU (f=99999, t=ULURDLUU) new!
+n: ================IN====HO==0==U==RXYZ (f=84, t=DRRRUUULDRDD) / 55 & 41
+  (================IN====HO==S0=U==RXYZ (f=99999, t=LDRRRUUULDRDD) new!
+  (================IN====HO=0Q==U==RXYZ (f=99999, t=RDRRRUUULDRDD) new!
+  (================IN==0=HO==L==U==RXYZ (f=133, t=DDRRRUUULDRDD) new!
+x: ==============FGOI==L=HN==0==U==RXYZ (f=94, t=UULDRDDLLLU) / 41 & 32
+  (==============FGOI==L=HN==S0=U==RXYZ (f=99999, t=UULDRDDLLLUR) new!
+  (==============FGOI==L=HN=0Q==U==RXYZ (f=99999, t=UULDRDDLLLUL) new!
+  (==============FGOI==0=HN==L==U==RXYZ (f=143, t=UULDRDDLLLUU) new!
+n: ==============0FGH=====I=====O=====U (f=85, t=RRRDDD) / 57 & 42
+  (=============0EFGH=====I=====O=====U (f=99999, t=RRRRDDD) new!
+  (==============LFGH==0==I=====O=====U (f=134, t=URRRDDD) new!
+  (========0=====9FGH=====I=====O=====U (f=99999, t=DRRRDDD) new!
+x: ==============FGO0==L=HI==R==N==XYZU (f=95, t=UULDRU) / 43 & 33
+  (==============FG0O==L=HI==R==N==XYZU (f=94, t=UULDRUL) 
+  (===========0==FGOC==L=HI==R==N==XYZU (f=99999, t=UULDRUU) new!
+n: ================0N====IH=====O=====U (f=89, t=DRULDRDD) / 59 & 43
+  (================N0====IH=====O=====U (f=92, t=LDRULDRDD) 
+  (===============0GN====IH=====O=====U (f=98, t=RDRULDRDD) new!
+  (==========0=====BN====IH=====O=====U (f=99999, t=DDRULDRDD) new!
+x: ==============F0GO==L=HI==R==N==XYZU (f=103, t=ULURDLUL) / 43 & 34
+  (==============0FGO==L=HI==R==N==XYZU (f=117, t=ULURDLULL) new!
+  (==============FMGO==L0HI==R==N==XYZU (f=99999, t=ULURDLULD) new!
+  (=========0====FAGO==L=HI==R==N==XYZU (f=99999, t=ULURDLULU) new!
+n: ================N0====IH=====O=====U (f=90, t=DLURDDD) / 60 & 44
+  (================0N====IH=====O=====U (f=89, t=RDLURDDD) 
+  (===========0====NC====IH=====O=====U (f=99999, t=DDLURDDD) new!
+x: ==============FGIH==0=ON==L==U==RXYZ (f=103, t=DLLLUU) / 45 & 35
+  (==============FGIH==M0ON==L==U==RXYZ (f=99999, t=DLLLUUR) new!
+  (==============FGIH=0K=ON==L==U==RXYZ (f=99999, t=DLLLUUL) new!
+  (==============0GIH==F=ON==L==U==RXYZ (f=182, t=DLLLUUU) new!
+n: ================NH====IO==0==U==RXYZ (f=95, t=DRRRUULURDDD) / 60 & 45
+  (================NH====IO==S0=U==RXYZ (f=99999, t=LDRRRUULURDDD) new!
+  (================NH====IO=0Q==U==RXYZ (f=99999, t=RDRRRUULURDDD) new!
+  (================NH==0=IO==L==U==RXYZ (f=144, t=DDRRRUULURDDD) new!
+x: ==============0FGO==L=HI==R==N==XYZU (f=117, t=ULURDLULL) / 47 & 36
+  (=============0EFGO==L=HI==R==N==XYZU (f=99999, t=ULURDLULLL) new!
+  (==============LFGO==0=HI==R==N==XYZU (f=166, t=ULURDLULLD) new!
+  (========0=====9FGO==L=HI==R==N==XYZU (f=99999, t=ULURDLULLU) new!
+n: ===============0GN====IH=====O=====U (f=98, t=RDRULDRDD) / 62 & 46
+  (==============0FGN====IH=====O=====U (f=112, t=RRDRULDRDD) new!
+  (===============MGN===0IH=====O=====U (f=99999, t=URDRULDRDD) new!
+  (=========0=====AGN====IH=====O=====U (f=99999, t=DRDRULDRDD) new!
+x: ==============LFGH==0=IO==R==N==XYZU (f=128, t=ULULLD) / 49 & 37
+  (==============LFGH==M0IO==R==N==XYZU (f=99999, t=ULULLDR) new!
+  (==============LFGH=0K=IO==R==N==XYZU (f=99999, t=ULULLDL) new!
+  (==============LFGH==R=IO==0==N==XYZU (f=159, t=ULULLDD) new!
+n: ====================0=====L=====RXYZ (f=102, t=DDRRR) / 64 & 47
+  (====================M0====L=====RXYZ (f=99999, t=LDDRRR) new!
+  (===================0K=====L=====RXYZ (f=99999, t=RDDRRR) new!
+  (==============0=====F=====L=====RXYZ (f=181, t=DDDRRR) new!
+x: ==============FGHO==0=IN==L==U==RXYZ (f=132, t=ULURDDDLLLUU) / 51 & 38
+  (==============FGHO==M0IN==L==U==RXYZ (f=99999, t=ULURDDDLLLUUR) new!
+  (==============FGHO=0K=IN==L==U==RXYZ (f=99999, t=ULURDDDLLLUUL) new!
+  (==============0GHO==F=IN==L==U==RXYZ (f=211, t=ULURDDDLLLUUU) new!
+n: ==============0FGN====IH=====O=====U (f=112, t=RRDRULDRDD) / 66 & 48
+  (=============0EFGN====IH=====O=====U (f=99999, t=RRRDRULDRDD) new!
+  (==============LFGN==0=IH=====O=====U (f=161, t=URRDRULDRDD) new!
+  (========0=====9FGN====IH=====O=====U (f=99999, t=DRRDRULDRDD) new!
+x: ==============LFGI==0=OH==R==N==XYZU (f=139, t=UULLLD) / 53 & 39
+  (==============LFGI==M0OH==R==N==XYZU (f=99999, t=UULLLDR) new!
+  (==============LFGI=0K=OH==R==N==XYZU (f=99999, t=UULLLDL) new!
+  (==============LFGI==R=OH==0==N==XYZU (f=170, t=UULLLDD) new!
+n: ==============LFG===0=HN=====O=====U (f=123, t=URRDRDD) / 68 & 49
+  (==============LFG===M0HN=====O=====U (f=99999, t=LURRDRDD) new!
+  (==============LFG==0K=HN=====O=====U (f=99999, t=RURRDRDD) new!
+  (==============LFG===R=HN==0==O=====U (f=154, t=UURRDRDD) new!
+x: ==============FGOI==0=HN==L==U==RXYZ (f=143, t=UULDRDDLLLUU) / 55 & 40
+  (==============FGOI==M0HN==L==U==RXYZ (f=99999, t=UULDRDDLLLUUR) new!
+  (==============FGOI=0K=HN==L==U==RXYZ (f=99999, t=UULDRDDLLLUUL) new!
+  (==============0GOI==F=HN==L==U==RXYZ (f=222, t=UULDRDDLLLUUU) new!
+n: ================IN==0=HO==L==U==RXYZ (f=133, t=DDRRRUUULDRDD) / 70 & 50
+  (================IN==M0HO==L==U==RXYZ (f=99999, t=LDDRRRUUULDRDD) new!
+  (================IN=0K=HO==L==U==RXYZ (f=99999, t=RDDRRRUUULDRDD) new!
+  (==============0=IN==F=HO==L==U==RXYZ (f=212, t=DDDRRRUUULDRDD) new!
+x: ==============LFGH==R=IO==0==N==XYZU (f=159, t=ULULLDD) / 57 & 41
+  (==============LFGH==R=IO==S0=N==XYZU (f=99999, t=ULULLDDR) new!
+  (==============LFGH==R=IO=0Q==N==XYZU (f=99999, t=ULULLDDL) new!
+  (==============LFGH==R=IO==X==N==0YZU (f=178, t=ULULLDDD) new!
+n: ==============LFGH==0==I=====O=====U (f=134, t=URRRDDD) / 72 & 51
+  (==============LFGH==M0=I=====O=====U (f=99999, t=LURRRDDD) new!
+  (==============LFGH=0K==I=====O=====U (f=99999, t=RURRRDDD) new!
+  (==============LFGH==R==I==0==O=====U (f=165, t=UURRRDDD) new!
+x: ==============LFGO==0=HI==R==N==XYZU (f=166, t=ULURDLULLD) / 59 & 42
+  (==============LFGO==M0HI==R==N==XYZU (f=99999, t=ULURDLULLDR) new!
+  (==============LFGO=0K=HI==R==N==XYZU (f=99999, t=ULURDLULLDL) new!
+  (==============LFGO==R=HI==0==N==XYZU (f=197, t=ULURDLULLDD) new!
+n: ================NH==0=IO==L==U==RXYZ (f=144, t=DDRRRUULURDDD) / 74 & 52
+  (================NH==M0IO==L==U==RXYZ (f=99999, t=LDDRRRUULURDDD) new!
+  (================NH=0K=IO==L==U==RXYZ (f=99999, t=RDDRRRUULURDDD) new!
+  (==============0=NH==F=IO==L==U==RXYZ (f=223, t=DDDRRRUULURDDD) new!
+x: ==============LFGI==R=OH==0==N==XYZU (f=170, t=UULLLDD) / 61 & 43
+  (==============LFGI==R=OH==S0=N==XYZU (f=99999, t=UULLLDDR) new!
+  (==============LFGI==R=OH=0Q==N==XYZU (f=99999, t=UULLLDDL) new!
+  (==============LFGI==R=OH==X==N==0YZU (f=189, t=UULLLDDD) new!
+n: ==============LFG===R=HN==0==O=====U (f=154, t=UURRDRDD) / 76 & 53
+  (==============LFG===R=HN==S0=O=====U (f=99999, t=LUURRDRDD) new!
+  (==============LFG===R=HN=0Q==O=====U (f=99999, t=RUURRDRDD) new!
+  (==============LFG===R=HN==X==O==0==U (f=173, t=UUURRDRDD) new!
+x: ==============LFGH==R=IO==X==N==0YZU (f=178, t=ULULLDDD) / 63 & 44
+  (==============LFGH==R=IO==X==N==Y0ZU (f=181, t=ULULLDDDR) new!
+  (==============LFGH==R=IO==X==N=0WYZU (f=99999, t=ULULLDDDL) new!
+n: ==============LFGN==0=IH=====O=====U (f=161, t=URRDRULDRDD) / 78 & 54
+  (==============LFGN==M0IH=====O=====U (f=99999, t=LURRDRULDRDD) new!
+  (==============LFGN=0K=IH=====O=====U (f=99999, t=RURRDRULDRDD) new!
+  (==============LFGN==R=IH==0==O=====U (f=192, t=UURRDRULDRDD) new!
+x: ==============LFGH==R=IO==X==N==Y0ZU (f=181, t=ULULLDDDR) / 64 & 45
+  (==============LFGH==R=IO==X==N==YZ0U (f=183, t=ULULLDDDRR) new!
+  (==============LFGH==R=IO==X0=N==YSZU (f=99999, t=ULULLDDDRU) new!
+n: ==============LFGH==R==I==0==O=====U (f=165, t=UURRRDDD) / 80 & 55
+  (==============LFGH==R==I==S0=O=====U (f=99999, t=LUURRRDDD) new!
+  (==============LFGH==R==I=0Q==O=====U (f=99999, t=RUURRRDDD) new!
+  (==============LFGH==R==I==X==O==0==U (f=184, t=UUURRRDDD) new!
+x: ==============0GIH==F=ON==L==U==RXYZ (f=182, t=DLLLUUU) / 65 & 46
+  (==============G0IH==F=ON==L==U==RXYZ (f=191, t=DLLLUUUR) new!
+  (=============0EGIH==F=ON==L==U==RXYZ (f=99999, t=DLLLUUUL) new!
+  (========0=====9GIH==F=ON==L==U==RXYZ (f=99999, t=DLLLUUUU) new!
+n: ==============LFG===R=HN==X==O==0==U (f=173, t=UUURRDRDD) / 82 & 56
+  (==============LFG===R=HN==X==O==Y0=U (f=176, t=LUUURRDRDD) new!
+  (==============LFG===R=HN==X==O=0W==U (f=99999, t=RUUURRDRDD) new!
+x: ==============LFGH==R=IO==X==N==YZ0U (f=183, t=ULULLDDDRR) / 67 & 47
+  (==============LFGH==R=IO==X==N==YZU0 (f=185, t=ULULLDDDRRR) new!
+  (==============LFGH==R=IO==X=0N==YZTU (f=99999, t=ULULLDDDRRU) new!
+n: ==============LFG===R=HN==X==O==Y0=U (f=176, t=LUUURRDRDD) / 83 & 57
+  (==============LFG===R=HN==X==O==YZ0U (f=178, t=LLUUURRDRDD) new!
+  (==============LFG===R=HN==X0=O==YS=U (f=99999, t=DLUUURRDRDD) new!
+x: ==============LFGH==R=IO==X==N==YZU0 (f=185, t=ULULLDDDRRR) / 68 & 48
+  (==============LFGH==R=IO==X==0==YZUN (f=204, t=ULULLDDDRRRU) new!
+n: ==============LFG===R=HN==X==O==YZ0U (f=178, t=LLUUURRDRDD) / 84 & 58
+  (==============LFG===R=HN==X==O==YZU0 (f=179, t=LLLUUURRDRDD) new!
+  (==============LFG===R=HN==X=0O==YZTU (f=99999, t=DLLUUURRDRDD) new!
+x: ==============LFGI==R=OH==X==N==0YZU (f=189, t=UULLLDDD) / 68 & 49
+  (==============LFGI==R=OH==X==N==Y0ZU (f=192, t=UULLLDDDR) new!
+  (==============LFGI==R=OH==X==N=0WYZU (f=99999, t=UULLLDDDL) new!
+n: ==============LFG===R=HN==X==O==YZU0 (f=179, t=LLLUUURRDRDD) / 85 & 59
+  (==============LFG===R=HN==X==0==YZUO (f=198, t=DLLLUUURRDRDD) new!
+x: ==============G0IH==F=ON==L==U==RXYZ (f=191, t=DLLLUUUR) / 69 & 50
+  (==============GI0H==F=ON==L==U==RXYZ (f=195, t=DLLLUUURR) new!
+  (==============GMIH==F0ON==L==U==RXYZ (f=99999, t=DLLLUUURD) new!
+  (=========0====GAIH==F=ON==L==U==RXYZ (f=99999, t=DLLLUUURU) new!
+n: ==============0=====F=====L=====RXYZ (f=181, t=DDDRRR) / 85 & 60
+  (==============G0====F=====L=====RXYZ (f=190, t=LDDDRRR) new!
+  (=============0E=====F=====L=====RXYZ (f=99999, t=RDDDRRR) new!
+  (========0=====9=====F=====L=====RXYZ (f=99999, t=DDDDRRR) new!
+x: ==============LFGI==R=OH==X==N==Y0ZU (f=192, t=UULLLDDDR) / 71 & 51
+  (==============LFGI==R=OH==X==N==YZ0U (f=194, t=UULLLDDDRR) new!
+  (==============LFGI==R=OH==X0=N==YSZU (f=99999, t=UULLLDDDRU) new!
+n: ==============LFGH==R==I==X==O==0==U (f=184, t=UUURRRDDD) / 87 & 61
+  (==============LFGH==R==I==X==O==Y0=U (f=187, t=LUUURRRDDD) new!
+  (==============LFGH==R==I==X==O=0W==U (f=99999, t=RUUURRRDDD) new!
+x: ==============LFGI==R=OH==X==N==YZ0U (f=194, t=UULLLDDDRR) / 72 & 52
+  (==============LFGI==R=OH==X==N==YZU0 (f=196, t=UULLLDDDRRR) new!
+  (==============LFGI==R=OH==X=0N==YZTU (f=99999, t=UULLLDDDRRU) new!
+n: ==============LFGH==R==I==X==O==Y0=U (f=187, t=LUUURRRDDD) / 88 & 62
+  (==============LFGH==R==I==X==O==YZ0U (f=189, t=LLUUURRRDDD) new!
+  (==============LFGH==R==I==X0=O==YS=U (f=99999, t=DLUUURRRDDD) new!
+x: ==============GI0H==F=ON==L==U==RXYZ (f=195, t=DLLLUUURR) / 73 & 53
+  (==============GIH0==F=ON==L==U==RXYZ (f=191, t=DLLLUUURRR) new!
+  (==============GIOH==F=0N==L==U==RXYZ (f=208, t=DLLLUUURRD) new!
+  (==========0===GIBH==F=ON==L==U==RXYZ (f=99999, t=DLLLUUURRU) new!
+n: ==============LFGH==R==I==X==O==YZ0U (f=189, t=LLUUURRRDDD) / 89 & 63
+  (==============LFGH==R==I==X==O==YZU0 (f=190, t=LLLUUURRRDDD) new!
+  (==============LFGH==R==I==X=0O==YZTU (f=99999, t=DLLUUURRRDDD) new!
+x: ==============GIH0==F=ON==L==U==RXYZ (f=191, t=DLLLUUURRR) / 75 & 54
+  (==============GIHN==F=O0==L==U==RXYZ (f=210, t=DLLLUUURRRD) new!
+  (===========0==GIHC==F=ON==L==U==RXYZ (f=99999, t=DLLLUUURRRU) new!
+n: ==============G0====F=====L=====RXYZ (f=190, t=LDDDRRR) / 90 & 64
+  (==============GH0===F=====L=====RXYZ (f=194, t=LLDDDRRR) new!
+  (==============GM====F0====L=====RXYZ (f=99999, t=ULDDDRRR) new!
+  (=========0====GA====F=====L=====RXYZ (f=99999, t=DLDDDRRR) new!
+x: ==============LFGI==R=OH==X==N==YZU0 (f=196, t=UULLLDDDRRR) / 76 & 55
+  (==============LFGI==R=OH==X==0==YZUN (f=215, t=UULLLDDDRRRU) new!
+n: ==============LFGH==R==I==X==O==YZU0 (f=190, t=LLLUUURRRDDD) / 92 & 65
+  (==============LFGH==R==I==X==0==YZUO (f=209, t=DLLLUUURRRDDD) new!
+x: ==============LFGO==R=HI==0==N==XYZU (f=197, t=ULURDLULLDD) / 76 & 56
+  (==============LFGO==R=HI==S0=N==XYZU (f=99999, t=ULURDLULLDDR) new!
+  (==============LFGO==R=HI=0Q==N==XYZU (f=99999, t=ULURDLULLDDL) new!
+  (==============LFGO==R=HI==X==N==0YZU (f=216, t=ULURDLULLDDD) new!
+n: ==============LFGN==R=IH==0==O=====U (f=192, t=UURRDRULDRDD) / 92 & 66
+  (==============LFGN==R=IH==S0=O=====U (f=99999, t=LUURRDRULDRDD) new!
+  (==============LFGN==R=IH=0Q==O=====U (f=99999, t=RUURRDRULDRDD) new!
+  (==============LFGN==R=IH==X==O==0==U (f=211, t=UUURRDRULDRDD) new!
+x: ==============LFGH==R=IO==X==0==YZUN (f=204, t=ULULLDDDRRRU) / 78 & 57
+  (==============LFGH==R=IO==X=0T==YZUN (f=99999, t=ULULLDDDRRRUL) new!
+  (==============LFGH==R=I0==X==O==YZUN (f=217, t=ULULLDDDRRRUU) new!
+n: ==============GH0===F=====L=====RXYZ (f=194, t=LLDDDRRR) / 94 & 67
+  (==============GHI0==F=====L=====RXYZ (f=190, t=LLLDDDRRR) new!
+  (==============GHN===F=0===L=====RXYZ (f=207, t=ULLDDDRRR) new!
+  (==========0===GHB===F=====L=====RXYZ (f=99999, t=DLLDDDRRR) new!
+x: ==============GIOH==F=0N==L==U==RXYZ (f=208, t=DLLLUUURRD) / 79 & 58
+  (==============GIOH==F=N0==L==U==RXYZ (f=206, t=DLLLUUURRDR) new!
+  (==============GIOH==F0MN==L==U==RXYZ (f=99999, t=DLLLUUURRDL) new!
+  (==============GIOH==F=TN==L=0U==RXYZ (f=99999, t=DLLLUUURRDD) new!
+n: ==============GHI0==F=====L=====RXYZ (f=190, t=LLLDDDRRR) / 96 & 68
+  (==============GHIO==F==0==L=====RXYZ (f=209, t=ULLLDDDRRR) new!
+  (===========0==GHIC==F=====L=====RXYZ (f=99999, t=DLLLDDDRRR) new!
+x: ==============GIOH==F=N0==L==U==RXYZ (f=206, t=DLLLUUURRDR) / 81 & 59
+  (==============GIOH==F=NU==L==0==RXYZ (f=213, t=DLLLUUURRDRD) new!
+  (==============GIO0==F=NH==L==U==RXYZ (f=237, t=DLLLUUURRDRU) new!
+n: ==============LFG===R=HN==X==0==YZUO (f=198, t=DLLLUUURRDRDD) / 97 & 69
+  (==============LFG===R=HN==X=0T==YZUO (f=99999, t=RDLLLUUURRDRDD) new!
+  (==============LFG===R=H0==X==N==YZUO (f=211, t=DDLLLUUURRDRDD) new!
+x: ==============GIHN==F=O0==L==U==RXYZ (f=210, t=DLLLUUURRRD) / 82 & 60
+  (==============GIHN==F=0O==L==U==RXYZ (f=209, t=DLLLUUURRRDL) new!
+  (==============GIHN==F=OU==L==0==RXYZ (f=217, t=DLLLUUURRRDD) new!
+n: ==============GHN===F=0===L=====RXYZ (f=207, t=ULLDDDRRR) / 98 & 70
+  (==============GHN===F=O0==L=====RXYZ (f=205, t=LULLDDDRRR) new!
+  (==============GHN===F0M===L=====RXYZ (f=99999, t=RULLDDDRRR) new!
+  (==============GHN===F=T===L=0===RXYZ (f=99999, t=UULLDDDRRR) new!
+x: ==============GIHN==F=0O==L==U==RXYZ (f=209, t=DLLLUUURRRDL) / 83 & 61
+  (==============GIHN==F0MO==L==U==RXYZ (f=99999, t=DLLLUUURRRDLL) new!
+  (==============GIHN==F=TO==L=0U==RXYZ (f=99999, t=DLLLUUURRRDLD) new!
+  (==============GI0N==F=HO==L==U==RXYZ (f=240, t=DLLLUUURRRDLU) new!
+n: ==============GHN===F=O0==L=====RXYZ (f=205, t=LULLDDDRRR) / 100 & 71
+  (==============GHN===F=OU==L==0==RXYZ (f=206, t=ULULLDDDRRR) new!
+  (==============GHN0==F=OI==L=====RXYZ (f=236, t=DLULLDDDRRR) new!
+x: ==============0GHO==F=IN==L==U==RXYZ (f=211, t=ULURDDDLLLUUU) / 85 & 62
+  (==============G0HO==F=IN==L==U==RXYZ (f=220, t=ULURDDDLLLUUUR) new!
+  (=============0EGHO==F=IN==L==U==RXYZ (f=99999, t=ULURDDDLLLUUUL) new!
+  (========0=====9GHO==F=IN==L==U==RXYZ (f=99999, t=ULURDDDLLLUUUU) new!
+n: ==============GHN===F=OU==L==0==RXYZ (f=206, t=ULULLDDDRRR) / 101 & 72
+  (==============GHN===F=OU==L=0T==RXYZ (f=99999, t=RULULLDDDRRR) new!
+  (==============GHN===F=OU==L==Z==RXY0 (f=213, t=UULULLDDDRRR) new!
+x: ==============GIOH==F=NU==L==0==RXYZ (f=213, t=DLLLUUURRDRD) / 87 & 63
+  (==============GIOH==F=NU==L=0T==RXYZ (f=99999, t=DLLLUUURRDRDL) new!
+  (==============GIOH==F=NU==L==Z==RXY0 (f=220, t=DLLLUUURRDRDD) new!
+n: ==============GHIO==F==0==L=====RXYZ (f=209, t=ULLLDDDRRR) / 102 & 73
+  (==============GHIO==F=0N==L=====RXYZ (f=208, t=RULLLDDDRRR) new!
+  (==============GHIO==F==U==L==0==RXYZ (f=210, t=UULLLDDDRRR) new!
+x: ==============LFGI==R=OH==X==0==YZUN (f=215, t=UULLLDDDRRRU) / 88 & 64
+  (==============LFGI==R=OH==X=0T==YZUN (f=99999, t=UULLLDDDRRRUL) new!
+  (==============LFGI==R=O0==X==H==YZUN (f=246, t=UULLLDDDRRRUU) new!
+n: ==============GHIO==F=0N==L=====RXYZ (f=208, t=RULLLDDDRRR) / 103 & 74
+  (==============GHIO==F0MN==L=====RXYZ (f=99999, t=RRULLLDDDRRR) new!
+  (==============GHIO==F=TN==L=0===RXYZ (f=99999, t=URULLLDDDRRR) new!
+  (==============GH0O==F=IN==L=====RXYZ (f=239, t=DRULLLDDDRRR) new!
+x: ==============LFGO==R=HI==X==N==0YZU (f=216, t=ULURDLULLDDD) / 89 & 65
+  (==============LFGO==R=HI==X==N==Y0ZU (f=219, t=ULURDLULLDDDR) new!
+  (==============LFGO==R=HI==X==N=0WYZU (f=99999, t=ULURDLULLDDDL) new!
+n: ==============LFGH==R==I==X==0==YZUO (f=209, t=DLLLUUURRRDDD) / 105 & 75
+  (==============LFGH==R==I==X=0T==YZUO (f=99999, t=RDLLLUUURRRDDD) new!
+  (==============LFGH==R==0==X==I==YZUO (f=240, t=DDLLLUUURRRDDD) new!
+x: ==============GIHN==F=OU==L==0==RXYZ (f=217, t=DLLLUUURRRDD) / 90 & 66
+  (==============GIHN==F=OU==L=0T==RXYZ (f=99999, t=DLLLUUURRRDDL) new!
+  (==============GIHN==F=OU==L==Z==RXY0 (f=224, t=DLLLUUURRRDDD) new!
+n: ==============GHIO==F==U==L==0==RXYZ (f=210, t=UULLLDDDRRR) / 106 & 76
+  (==============GHIO==F==U==L=0T==RXYZ (f=99999, t=RUULLLDDDRRR) new!
+  (==============GHIO==F==U==L==Z==RXY0 (f=217, t=UUULLLDDDRRR) new!
+x: ==============LFGH==R=I0==X==O==YZUN (f=217, t=ULULLDDDRRRUU) / 91 & 67
+  (==============LFGH==R=0I==X==O==YZUN (f=215, t=ULULLDDDRRRUUL) new!
+  (==============LFG0==R=IH==X==O==YZUN (f=248, t=ULULLDDDRRRUUU) new!
+n: ==============LFG===R=H0==X==N==YZUO (f=211, t=DDLLLUUURRDRDD) / 107 & 77
+  (==============LFG===R=0H==X==N==YZUO (f=209, t=RDDLLLUUURRDRDD) new!
+  (==============LFG0==R=HI==X==N==YZUO (f=242, t=DDDLLLUUURRDRDD) new!
+x: ==============LFGH==R=0I==X==O==YZUN (f=215, t=ULULLDDDRRRUUL) / 92 & 68
+  (==============LFGH==R0MI==X==O==YZUN (f=99999, t=ULULLDDDRRRUULL) new!
+  (==============LFGH==R=TI==X=0O==YZUN (f=99999, t=ULULLDDDRRRUULD) new!
+  (==============LF0H==R=GI==X==O==YZUN (f=264, t=ULULLDDDRRRUULU) new!
+n: ==============LFG===R=0H==X==N==YZUO (f=209, t=RDDLLLUUURRDRDD) / 108 & 78
+  (==============LFG===R0MH==X==N==YZUO (f=99999, t=RRDDLLLUUURRDRDD) new!
+  (==============LFG===R=TH==X=0N==YZUO (f=99999, t=URDDLLLUUURRDRDD) new!
+  (==============LF0===R=GH==X==N==YZUO (f=258, t=DRDDLLLUUURRDRDD) new!
+x: ==============LFGO==R=HI==X==N==Y0ZU (f=219, t=ULURDLULLDDDR) / 94 & 69
+  (==============LFGO==R=HI==X==N==YZ0U (f=221, t=ULURDLULLDDDRR) new!
+  (==============LFGO==R=HI==X0=N==YSZU (f=99999, t=ULURDLULLDDDRU) new!
+n: ==============LFGN==R=IH==X==O==0==U (f=211, t=UUURRDRULDRDD) / 110 & 79
+  (==============LFGN==R=IH==X==O==Y0=U (f=214, t=LUUURRDRULDRDD) new!
+  (==============LFGN==R=IH==X==O=0W==U (f=99999, t=RUUURRDRULDRDD) new!
+x: ==============G0HO==F=IN==L==U==RXYZ (f=220, t=ULURDDDLLLUUUR) / 95 & 70
+  (==============GH0O==F=IN==L==U==RXYZ (f=226, t=ULURDDDLLLUUURR) new!
+  (==============GMHO==F0IN==L==U==RXYZ (f=99999, t=ULURDDDLLLUUURD) new!
+  (=========0====GAHO==F=IN==L==U==RXYZ (f=99999, t=ULURDDDLLLUUURU) new!
+n: ==============0=IN==F=HO==L==U==RXYZ (f=212, t=DDDRRRUUULDRDD) / 111 & 80
+  (==============G0IN==F=HO==L==U==RXYZ (f=221, t=LDDDRRRUUULDRDD) new!
+  (=============0E=IN==F=HO==L==U==RXYZ (f=99999, t=RDDDRRRUUULDRDD) new!
+  (========0=====9=IN==F=HO==L==U==RXYZ (f=99999, t=DDDDRRRUUULDRDD) new!
+x: ==============GIOH==F=NU==L==Z==RXY0 (f=220, t=DLLLUUURRDRDD) / 97 & 71
+  (==============GIOH==F=NU==L==Z==RX0Y (f=223, t=DLLLUUURRDRDDL) new!
+n: ==============GHN===F=OU==L==Z==RXY0 (f=213, t=UULULLDDDRRR) / 113 & 81
+  (==============GHN===F=OU==L==Z==RX0Y (f=216, t=RUULULLDDDRRR) new!
+x: ==============LFGO==R=HI==X==N==YZ0U (f=221, t=ULURDLULLDDDRR) / 97 & 72
+  (==============LFGO==R=HI==X==N==YZU0 (f=223, t=ULURDLULLDDDRRR) new!
+  (==============LFGO==R=HI==X=0N==YZTU (f=99999, t=ULURDLULLDDDRRU) new!
+n: ==============LFGN==R=IH==X==O==Y0=U (f=214, t=LUUURRDRULDRDD) / 113 & 82
+  (==============LFGN==R=IH==X==O==YZ0U (f=216, t=LLUUURRDRULDRDD) new!
+  (==============LFGN==R=IH==X0=O==YS=U (f=99999, t=DLUUURRDRULDRDD) new!
+x: ==============0GOI==F=HN==L==U==RXYZ (f=222, t=UULDRDDLLLUUU) / 98 & 73
+  (==============G0OI==F=HN==L==U==RXYZ (f=231, t=UULDRDDLLLUUUR) new!
+  (=============0EGOI==F=HN==L==U==RXYZ (f=99999, t=UULDRDDLLLUUUL) new!
+  (========0=====9GOI==F=HN==L==U==RXYZ (f=99999, t=UULDRDDLLLUUUU) new!
+n: ==============GHN===F=OU==L==Z==RX0Y (f=216, t=RUULULLDDDRRR) / 114 & 83
+  (==============GHN===F=OU==L==Z==R0XY (f=220, t=RRUULULLDDDRRR) new!
+  (==============GHN===F=OU==L=0Z==RXTY (f=99999, t=DRUULULLDDDRRR) new!
+x: ==============GIOH==F=NU==L==Z==RX0Y (f=223, t=DLLLUUURRDRDDL) / 100 & 74
+  (==============GIOH==F=NU==L==Z==R0XY (f=227, t=DLLLUUURRDRDDLL) new!
+  (==============GIOH==F=NU==L=0Z==RXTY (f=99999, t=DLLLUUURRDRDDLU) new!
+n: ==============LFGN==R=IH==X==O==YZ0U (f=216, t=LLUUURRDRULDRDD) / 115 & 84
+  (==============LFGN==R=IH==X==O==YZU0 (f=217, t=LLLUUURRDRULDRDD) new!
+  (==============LFGN==R=IH==X=0O==YZTU (f=99999, t=DLLUUURRDRULDRDD) new!
+x: ==============LFGO==R=HI==X==N==YZU0 (f=223, t=ULURDLULLDDDRRR) / 101 & 75
+  (==============LFGO==R=HI==X==0==YZUN (f=242, t=ULURDLULLDDDRRRU) new!
+n: ==============GHIO==F==U==L==Z==RXY0 (f=217, t=UUULLLDDDRRR) / 116 & 85
+  (==============GHIO==F==U==L==Z==RX0Y (f=220, t=RUUULLLDDDRRR) new!
+x: ==============GIHN==F=OU==L==Z==RXY0 (f=224, t=DLLLUUURRRDDD) / 101 & 76
+  (==============GIHN==F=OU==L==Z==RX0Y (f=227, t=DLLLUUURRRDDDL) new!
+n: ==============LFGN==R=IH==X==O==YZU0 (f=217, t=LLLUUURRDRULDRDD) / 116 & 86
+  (==============LFGN==R=IH==X==0==YZUO (f=236, t=DLLLUUURRDRULDRDD) new!
+x: ==============GH0O==F=IN==L==U==RXYZ (f=226, t=ULURDDDLLLUUURR) / 101 & 77
+  (==============GHO0==F=IN==L==U==RXYZ (f=229, t=ULURDDDLLLUUURRR) new!
+  (==============GHIO==F=0N==L==U==RXYZ (f=209, t=ULURDDDLLLUUURRD) new!
+  (==========0===GHBO==F=IN==L==U==RXYZ (f=99999, t=ULURDDDLLLUUURRU) new!
+n: ==============GHIO==F==U==L==Z==RX0Y (f=220, t=RUUULLLDDDRRR) / 116 & 87
+  (==============GHIO==F==U==L==Z==R0XY (f=224, t=RRUUULLLDDDRRR) new!
+  (==============GHIO==F==U==L=0Z==RXTY (f=99999, t=DRUUULLLDDDRRR) new!
+x: ==============GHIO==F=0N==L==U==RXYZ (f=209, t=ULURDDDLLLUUURRD) / 103 & 78
+  (==============GHIO==F=N0==L==U==RXYZ (f=207, t=ULURDDDLLLUUURRDR) new!
+  (==============GHIO==F0MN==L==U==RXYZ (f=99999, t=ULURDDDLLLUUURRDL) new!
+  (==============GHIO==F=TN==L=0U==RXYZ (f=99999, t=ULURDDDLLLUUURRDD) new!
+n: ==============GHN===F=OU==L==Z==R0XY (f=220, t=RRUULULLDDDRRR) / 117 & 88
+  (==============GHN===F=OU==L==Z==0RXY (f=226, t=RRRUULULLDDDRRR) new!
+  (==============GHN===F=OU==L0=Z==RSXY (f=99999, t=DRRUULULLDDDRRR) new!
+x: ==============GHIO==F=N0==L==U==RXYZ (f=207, t=ULURDDDLLLUUURRDR) / 105 & 79
+  (==============GHIO==F=NU==L==0==RXYZ (f=214, t=ULURDDDLLLUUURRDRD) new!
+  (==============GHI0==F=NO==L==U==RXYZ (f=196, t=ULURDDDLLLUUURRDRU) new!
+n: ==============G0IN==F=HO==L==U==RXYZ (f=221, t=LDDDRRRUUULDRDD) / 118 & 89
+  (==============GI0N==F=HO==L==U==RXYZ (f=227, t=LLDDDRRRUUULDRDD) new!
+  (==============GMIN==F0HO==L==U==RXYZ (f=99999, t=ULDDDRRRUUULDRDD) new!
+  (=========0====GAIN==F=HO==L==U==RXYZ (f=99999, t=DLDDDRRRUUULDRDD) new!
+x: ==============GHI0==F=NO==L==U==RXYZ (f=196, t=ULURDDDLLLUUURRDRU) / 106 & 80
+  (==============GH0I==F=NO==L==U==RXYZ (f=194, t=ULURDDDLLLUUURRDRUL) new!
+  (===========0==GHIC==F=NO==L==U==RXYZ (f=99999, t=ULURDDDLLLUUURRDRUU) new!
+n: ==============0=NH==F=IO==L==U==RXYZ (f=223, t=DDDRRRUULURDDD) / 120 & 90
+  (==============G0NH==F=IO==L==U==RXYZ (f=232, t=LDDDRRRUULURDDD) new!
+  (=============0E=NH==F=IO==L==U==RXYZ (f=99999, t=RDDDRRRUULURDDD) new!
+  (========0=====9=NH==F=IO==L==U==RXYZ (f=99999, t=DDDDRRRUULURDDD) new!
+x: ==============GH0I==F=NO==L==U==RXYZ (f=194, t=ULURDDDLLLUUURRDRUL) / 107 & 81
+  (==============G0HI==F=NO==L==U==RXYZ (f=190, t=ULURDDDLLLUUURRDRULL) new!
+  (==============GHNI==F=0O==L==U==RXYZ (f=213, t=ULURDDDLLLUUURRDRULD) new!
+  (==========0===GHBI==F=NO==L==U==RXYZ (f=99999, t=ULURDDDLLLUUURRDRULU) new!
+n: ==============GHIO==F==U==L==Z==R0XY (f=224, t=RRUUULLLDDDRRR) / 122 & 91
+  (==============GHIO==F==U==L==Z==0RXY (f=230, t=RRRUUULLLDDDRRR) new!
+  (==============GHIO==F==U==L0=Z==RSXY (f=99999, t=DRRUUULLLDDDRRR) new!
+x: ==============G0HI==F=NO==L==U==RXYZ (f=190, t=ULURDDDLLLUUURRDRULL) / 109 & 82
+  (==============0GHI==F=NO==L==U==RXYZ (f=183, t=ULURDDDLLLUUURRDRULLL) new!
+  (==============GMHI==F0NO==L==U==RXYZ (f=99999, t=ULURDDDLLLUUURRDRULLD) new!
+  (=========0====GAHI==F=NO==L==U==RXYZ (f=99999, t=ULURDDDLLLUUURRDRULLU) new!
+n: ==============GHN===F=OU==L==Z==0RXY (f=226, t=RRRUULULLDDDRRR) / 123 & 92
+  (==============GHN===F=OU==L==Z=0WRXY (f=99999, t=RRRRUULULLDDDRRR) new!
+  (==============GHN===F=OU==0==Z==LRXY (f=275, t=DRRRUULULLDDDRRR) new!
+x: ==============0GHI==F=NO==L==U==RXYZ (f=183, t=ULURDDDLLLUUURRDRULLL) / 111 & 83
+  (=============0EGHI==F=NO==L==U==RXYZ (f=99999, t=ULURDDDLLLUUURRDRULLLL) new!
+  (==============FGHI==0=NO==L==U==RXYZ (f=106, t=ULURDDDLLLUUURRDRULLLD) new!
+  (========0=====9GHI==F=NO==L==U==RXYZ (f=99999, t=ULURDDDLLLUUURRDRULLLU) new!
+n: ==============GI0N==F=HO==L==U==RXYZ (f=227, t=LLDDDRRRUUULDRDD) / 124 & 93
+2943 DLLLUUURRRDLULLDDDRRRUUULDRDD
+DUMP: o ==============LFGN==R=IH==X=0O==YZTU DLLUUURRDRULDRDD 99999
+DUMP: o ==============LFGN==R=IH==X==O=0W==U RUUURRDRULDRDD 99999
+DUMP: c ==============GHN===F=OU==L==Z==0RXY RRRUULULLDDDRRR 99999
+g: =====================MOU===ST0===YZN
+n: ==============GHIO==F==U==L==Z==0RXY (f=230, t=RRRUUULLLDDDRRR) / 124 & 93
+  (==============GHIO==F==U==L==Z=0WRXY (f=99999, t=RRRRUUULLLDDDRRR) new!
+  (==============GHIO==F==U==0==Z==LRXY (f=99999, t=DRRRUUULLLDDDRRR) new!
+x: =====================MOU===ST0===YZN (f=47, t=) / 0 & 0
+  (=====================MOU===S0T===YZN (f=50, t=L) new!
+  (=====================MOU===STN===YZ0 (f=30, t=D) new!
+  (=====================MO0===STU===YZN (f=42, t=U) new!
+n: ==============G0NH==F=IO==L==U==RXYZ (f=232, t=LDDDRRRUULURDDD) / 125 & 94
+  (==============GN0H==F=IO==L==U==RXYZ (f=99999, t=LLDDDRRRUULURDDD) new!
+  (==============GMNH==F0IO==L==U==RXYZ (f=99999, t=ULDDDRRRUULURDDD) new!
+  (=========0====GANH==F=IO==L==U==RXYZ (f=99999, t=DLDDDRRRUULURDDD) new!
+x: =====================MOU===STN===YZ0 (f=30, t=D) / 2 & 1
+  (=====================MOU===STN===Y0Z (f=32, t=DL) new!
+n: ==============GHN0==F=OI==L=====RXYZ (f=236, t=DLULLDDDRRR) / 127 & 95
+  (==============GH0N==F=OI==L=====RXYZ (f=99999, t=RDLULLDDDRRR) new!
+  (===========0==GHNC==F=OI==L=====RXYZ (f=99999, t=DDLULLDDDRRR) new!
+x: =====================MOU===STN===Y0Z (f=32, t=DL) / 2 & 2
+  (=====================MOU===STN===0YZ (f=35, t=DLL) new!
+  (=====================MOU===S0N===YTZ (f=45, t=DLU) new!
+n: ==============LFGN==R=IH==X==0==YZUO (f=236, t=DLLLUUURRDRULDRDD) / 128 & 96
+  (==============LFGN==R=IH==X=0T==YZUO (f=99999, t=RDLLLUUURRDRULDRDD) new!
+  (==============LFGN==R=I0==X==H==YZUO (f=99999, t=DDLLLUUURRDRULDRDD) new!
+x: =====================MOU===STN===0YZ (f=35, t=DLL) / 3 & 3
+  (=====================MOU===STN==0XYZ (f=99999, t=DLLL) new!
+  (=====================MOU===0TN===SYZ (f=54, t=DLLU) new!
+n: ==============GH0O==F=IN==L=====RXYZ (f=239, t=DRULLLDDDRRR) / 129 & 97
+  (==============GHO0==F=IN==L=====RXYZ (f=99999, t=LDRULLLDDDRRR) new!
+  (==============G0HO==F=IN==L=====RXYZ (f=99999, t=RDRULLLDDDRRR) new!
+  (==========0===GHBO==F=IN==L=====RXYZ (f=99999, t=DDRULLLDDDRRR) new!
+x: =====================MO0===STU===YZN (f=42, t=U) / 4 & 4
+  (=====================M0O===STU===YZN (f=41, t=UL) new!
+  (=================0===MOI===STU===YZN (f=99999, t=UU) new!
+n: ==============LFGH==R==0==X==I==YZUO (f=240, t=DDLLLUUURRRDDD) / 131 & 98
+  (==============LFGH==R=0N==X==I==YZUO (f=99999, t=RDDLLLUUURRRDDD) new!
+  (==============LFG0==R==H==X==I==YZUO (f=99999, t=DDDLLLUUURRRDDD) new!
+x: =====================M0O===STU===YZN (f=41, t=UL) / 5 & 5
+  (=====================0MO===STU===YZN (f=47, t=ULL) new!
+  (=====================MTO===S0U===YZN (f=54, t=ULD) new!
+  (================0====MHO===STU===YZN (f=99999, t=ULU) new!
+n: ==============LFG0==R=HI==X==N==YZUO (f=242, t=DDDLLLUUURRDRDD) / 132 & 99
+  (==============LF0G==R=HI==X==N==YZUO (f=99999, t=RDDDLLLUUURRDRDD) new!
+  (===========0==LFGC==R=HI==X==N==YZUO (f=99999, t=DDDDLLLUUURRDRDD) new!
+x: =====================MOU===S0N===YTZ (f=45, t=DLU) / 7 & 6
+  (=====================MOU===SN0===YTZ (f=43, t=DLUR) new!
+  (=====================MOU===0SN===YTZ (f=49, t=DLUL) new!
+  (=====================M0U===SON===YTZ (f=58, t=DLUU) new!
+n: ==============LF0===R=GH==X==N==YZUO (f=258, t=DRDDLLLUUURRDRDD) / 133 & 100
+  (==============LFI0==R=GH==X==N==YZUO (f=99999, t=LDRDDLLLUUURRDRDD) new!
+  (==============L0F===R=GH==X==N==YZUO (f=99999, t=RDRDDLLLUUURRDRDD) new!
+  (==========0===LFB===R=GH==X==N==YZUO (f=99999, t=DDRDDLLLUUURRDRDD) new!
+x: =====================MOU===SN0===YTZ (f=43, t=DLUR) / 9 & 7
+  (=====================MOU===SNZ===YT0 (f=50, t=DLURD) new!
+  (=====================MO0===SNU===YTZ (f=38, t=DLURU) new!
+n: ==============GHN===F=OU==0==Z==LRXY (f=275, t=DRRRUULULLDDDRRR) / 135 & 101
+  (==============GHN===F=OU==S0=Z==LRXY (f=99999, t=LDRRRUULULLDDDRRR) new!
+  (==============GHN===F=OU=0Q==Z==LRXY (f=99999, t=RDRRRUULULLDDDRRR) new!
+  (==============GHN===0=OU==F==Z==LRXY (f=99999, t=DDRRRUULULLDDDRRR) new!
+x: =====================MO0===SNU===YTZ (f=38, t=DLURU) / 10 & 8
+  (=====================M0O===SNU===YTZ (f=37, t=DLURUL) new!
+  (=================0===MOI===SNU===YTZ (f=99999, t=DLURUU) new!
+n: ========0=====9=====F=====L=====RXYZ (f=99999, t=DDDDRRR) / 137 & 102
+ERROR: Invalid f(n) for ========0=====9=====F=====L=====RXYZ
