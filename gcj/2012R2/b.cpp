@@ -56,11 +56,11 @@ int main() {
 
     for(int t=1; t<=T; t++) {
 
-        int N;
-        cin >>N;
+        int N, W, L;
+        cin >>N >>W >>L;
 
-        vector<int> ary(N, 0);
-        FORI(i, N) cin >>ary[i];
+        vector<int> r(N, 0);
+        FORI(i, N) cin >>r[i];
 
         
 
