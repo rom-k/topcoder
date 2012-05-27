@@ -3,6 +3,13 @@ gcj/Qualification Round 2012/_ref_D-large/
 mypc/
 other/ba_cy/
 local/
+in
+do.sh
+do.bat
+tmp
+tmp[0-9]
+*.tmp
+[0-9]
 *.in
 *.out
 *.exe
@@ -10,15 +17,16 @@ local/
 *.txt
 *.pdf
 *.zip
+*.dat
 *.html
+*.bk
+*.bak
 *.bk.cpp
 *.in[0-9]
 *.in.[0-9]
 *.out[0-9]
 *.out.[0-9]
 *.expect.[0-9]
-*.bk
-*.bak
 *.bak[0-9]
 *~[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]
 
