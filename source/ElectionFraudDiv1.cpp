@@ -63,44 +63,20 @@ public:
             return -1;
         }
 
-        int cnt = 1;
-        int ret;
-        set<int> s;
-        FORI(i,n) s.insert(p[i]);
-        while (1) {
-            bool ok = true;
-            set<int>::iterator it = s.begin();
-            int div = *it;
-            while(div == 0) {it++; div = *it;}
+//        int num_MAX = 5000;
+//        FORIS(num,1,num_MAX) {
+        for (int num = 1; true; num++) {
+            int l = 0, r = 0;
             FORI(i,n) {
-                int q = p[i] / div;
-                int r = p[i] % div;
-                if (r-1 < -0.5*cnt*(q+1)
-                or  0.5*cnt*q < r) {
-                    ok = false;
-                    break;
-                }
+                if (p[i] == 0) continue;
+                l += max((int)ceil((double)num / 100. * ((double)p[i] - 0.5)),   1);
+                r += min((int)    ((double)num / 100. * ((double)p[i] + 0.5)), num);
+                if (r < l) { l = -1; break; }
             }
-            if (ok) {
-                ret = (int)(sum/div + 0.5);
-                bool ok1 = true;
-                int sum_u = 0;
-                FORI(i,n) {
-                    int u = (int)((double)ret/sum*p[i] + 0.5);
-                    sum_u += u;
-                    if (p[i] != (int)((double)u/ret*100 + 0.5)) ok1 = false;
-                }
-                if (ret != sum_u) ok1 = false;
-                if (ok1) break;
-            }
-            set<int> s1;
-            FORE(it,s,set<int>) FORE(it1,s,set<int>)
-                if (*it < *it1) s1.insert(*it1 - *it);
-            s.swap(s1);
-            cnt++;
+            if (l <= num and num <= r) return num;
         }
 
-        return ret;
+        return -1;
     }
 
     
