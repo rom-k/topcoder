@@ -46,55 +46,59 @@ typedef vector<LL> VL;
 #define DBG2(a, b) if (DEBUG) cout <<"DEBUG::: " <<a <<"=" <<b <<endl;
 
 int _is_prime1(int n) {
-	if (n     <= 1) return false;
-	if (n     == 2) return true;
-	if (n % 2 == 0) return false;
-	
-	int m = (int) sqrt(n);
-	for (int i=3; i<=m; i+=2) 
-		if (n%i == 0) return false;
-	
-	return true;
+    if (n     <= 1) return false;
+    if (n     == 2) return true;
+    if (n % 2 == 0) return false;
+
+    int m = (int) sqrt(n);
+    for (int i=3; i<=m; i+=2) 
+        if (n%i == 0) return false;
+
+    return true;
 }
 
-//	vector<bool> sieve(1000);
-//	_is_prime2(sieve);
+//    vector<bool> sieve(1000);
+//    _is_prime2(sieve);
 void _is_prime2(vector<bool>& sieve) {
-	int n = sieve.size() - 1;
-	for (int i=0; i<n+1; i++)
-		sieve[i] = true;
-	
-	sieve[0] = false;
-	sieve[1] = false;
-	
-	int m = (int) sqrt(n);
-	for (int i=2; i<=m; i++)
-		if (sieve[i])
-			for (int k=i*i; k<=n; k+=i)
-				sieve[k] = false;
-	
-	return;
+    int n = sieve.size() - 1;
+    for (int i=0; i<n+1; i++)
+        sieve[i] = true;
+
+    sieve[0] = false;
+    sieve[1] = false;
+
+    int m = (int) sqrt(n);
+    for (int i=2; i<=m; i++)
+        if (sieve[i])
+            for (int k=i*i; k<=n; k+=i)
+                sieve[k] = false;
+
+    return;
+}
+
+set<int> s;
+bool _is_pandegital(int n) {
+    s.clear();
+    while (n > 0) {
+        if (s.find(n % 10) != s.end()) return false;
+        s.insert(n % 10);
+        n /= 10;
+    }
+    int i = 1;
+    for(set<int>::iterator it=s.begin();it!=s.end();it++)
+        if (*it != i++) return false;
+    return true;
 }
 
 int main() {
-	int T;
-	cin >>T;
-	cin.ignore();
-	
-	for(int t=1; t<=T; t++) {
-		
-		int N;
-		cin >>N;
-		
-		vector<int> ary(N, 0);
-		FORI(i, N) cin >>ary[i];
-		
-		
-		
-		int ret = 0;
-		cout <<"Case #" <<t <<": " <<ret <<endl;
-		//printf("Case #%d: %.0lf\n", t, ret);
-	}
-	
-	return 0;
+    int ret = 87654321;
+
+    vector<bool> s(ret, false);
+    _is_prime2(s);
+    while (1) {
+        if (s[ret] and _is_pandegital(ret)) break;
+        ret--;
+    }
+    cout <<ret <<endl;
+    return 0;
 }
