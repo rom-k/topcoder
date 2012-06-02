@@ -4,42 +4,50 @@ using namespace std;
 #define p(n) (n*(3*n-1)/2)
 
 int n;
-int r;
-int diff;
+int n2;
 set<int> se;
 
-int add_p(int target) {
-    //TODO
-}
-
 int _add_p() {
-    int ret = n * (3 * n - 1) / 2;
-    diff = ret - r;
-    r = ret;
+    if (n2 < n) { n2 = n; }
+    else        { n2++;   }
+    int ret = p(n2);
     se.insert(ret);
     return ret;
 }
 
-int main() {
-    n = 1;
-    r = 0;
-    int ret = -1;
-    while (true) {
-        //TODO
-//        string s;
-//        cin >>s;
-//        if (s == "") break;
+int add_p(int target) {
+    int ret = 0;
+    while (ret < target) { ret = _add_p(); }
+    return ret;
+}
 
-//        int n = 0;
-//        for (int i=0;i<s.size();i++) n += s[i] - 'A' + 1;
-//        while (k < n) {
-//            k *= (j + 2);
-//            k /= j;
-//            j++;
-//            se.insert(k);
+int main() {
+    n  = 1;
+    n2 = 1;
+    int p_cur = 1;
+    int p_nxt;
+    int D = 0x7F7F7F7F;
+    se.insert(p_cur);
+
+    while (true) {
+        n++;
+        p_nxt = p(n);
+        if (D < p_nxt - p_cur) break;
+
+        for (set<int>::reverse_iterator it=se.rbegin();it!=se.rend();it++) {
+            int p = (*it);
+            if (p_nxt <= p) continue;
+            if (D < p_nxt - p) break;
+            if (se.find(p_nxt - p) == se.end()) continue;
+            add_p(p_nxt + *it);
+            if (se.find(p_nxt + p) == se.end()) continue;
+            D = p_nxt - p;
+cout <<"  => D = " <<D <<endl;
         }
-        if (se.find(n) != se.end()) ret++;
+
+        se.insert(p_nxt);
+        p_cur = p_nxt;
     }
-    cout <<ret <<endl;
+    cout <<D <<endl;
     return 0;
 }
