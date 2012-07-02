@@ -1,0 +1,75 @@
+#include <iostream>
+#include <sstream>
+#include <set>
+using namespace std;
+
+int _time2min(string t) {
+    return (t[0]-'0') * 600
+         + (t[1]-'0') * 60
+         + (t[3]-'0') * 10
+         + (t[4]-'0');
+}
+
+string _min2time(int m) {
+    int h = m/60;
+    m %= 60;
+
+    stringstream ss;
+    if (10 <= h) ss <<"0";
+    ss <<h;
+    if (10 <= m) ss<<"0";
+    ss <<m;
+    return ss.str();
+}
+
+struct _relation {
+    string c1, c2;
+    int t1, t2;
+};
+
+int main() {
+    int N, timeB;
+    string cityA, cityB, hour[24], tmp1, tmp2;
+
+    cin >>cityA;
+    for (int i=0;i<24;i++) cin >>hour[i];
+    cin >>N;
+    _relation r[N];
+    for (int i=0;i<N;i++) {
+        cin >>r[i].c1 >>tmp1 >>r[i].c2 >>tmp2;
+        r[i].t1 = _time2min(tmp1);
+        r[i].t2 = _time2min(tmp2);
+    }
+    cin >>cityB;
+    cin >>tmp1;
+    timeB = _time2min(tmp1);
+
+    set<string> cities;
+    cities.insert(cityA);
+    cities.insert(cityB);
+    for (int i=0;i<N;i++) {
+        cities.insert(r[i].c1);
+        cities.insert(r[i].c2);
+    }
+    int nc = cities.size();
+//    int i = 0;
+//    string cities2[nc];
+//    map<string,int> 
+//    for (set<string::iterator it=cities.begin();it!=cities.end();it++) {
+//        cities2[i] = (*it);
+//        i++;
+//    }
+//    int timediff[nc][nc];
+    map<string,int> timediff;
+    for (set<string::iterator it=cities.begin();
+        it!=cities.end();
+        it++) {
+        for (set<string::iterator it2=cities.begin();
+            it2!=cities.end();
+            it2++) {
+            
+        }
+    }
+
+    return 0;
+}
