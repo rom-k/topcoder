@@ -50,13 +50,15 @@ int main() {
     }
 
     set<PIC> ans;
+    int sumprod = 0;
     for (int i=0;i<7;i++) {
         ans.insert(PIC((i+1)*(x[i]+1),board[i][x[i]]));
+        sumprod += (i+1)*(x[i]+1);
     }
     for (set<PIC>::iterator it=ans.begin();it!=ans.end();it++) {
         cout <<(*it).second;
     }
-    cout <<endl;
+    cout <<"-" <<sumprod <<endl;
 
     return 0;
 }
