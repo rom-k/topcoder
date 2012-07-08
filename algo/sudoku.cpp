@@ -1,14 +1,208 @@
+//Powerd by http://www2.tokai.or.jp/deepgreen/shortnotes/numberplace/algorithm.htm
+
 #include <iostream>
-#include <vector>
-#include <algorithm>
 using namespace std;
 #define REP(i,n) for(int i=0;i<n;i++)
+#define REPS(i,s,n) for(int i=s;i<n;i++)
+
+int b[10] = {0x00, 0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x40, 0x80, 0x100};
+int bitcnt[0x200] = {
+    0,1,1,2,1,2,2,3,1,2,2,3,2,3,3,4,1,2,2,3,2,3,3,4,2,3,3,4,3,4,4,5,
+    1,2,2,3,2,3,3,4,2,3,3,4,3,4,4,5,2,3,3,4,3,4,4,5,3,4,4,5,4,5,5,6,
+    1,2,2,3,2,3,3,4,2,3,3,4,3,4,4,5,2,3,3,4,3,4,4,5,3,4,4,5,4,5,5,6,
+    2,3,3,4,3,4,4,5,3,4,4,5,4,5,5,6,3,4,4,5,4,5,5,6,4,5,5,6,5,6,6,7,
+    1,2,2,3,2,3,3,4,2,3,3,4,3,4,4,5,2,3,3,4,3,4,4,5,3,4,4,5,4,5,5,6,
+    2,3,3,4,3,4,4,5,3,4,4,5,4,5,5,6,3,4,4,5,4,5,5,6,4,5,5,6,5,6,6,7,
+    2,3,3,4,3,4,4,5,3,4,4,5,4,5,5,6,3,4,4,5,4,5,5,6,4,5,5,6,5,6,6,7,
+    3,4,4,5,4,5,5,6,4,5,5,6,5,6,6,7,4,5,5,6,5,6,6,7,5,6,6,7,6,7,7,8,
+    1,2,2,3,2,3,3,4,2,3,3,4,3,4,4,5,2,3,3,4,3,4,4,5,3,4,4,5,4,5,5,6,
+    2,3,3,4,3,4,4,5,3,4,4,5,4,5,5,6,3,4,4,5,4,5,5,6,4,5,5,6,5,6,6,7,
+    2,3,3,4,3,4,4,5,3,4,4,5,4,5,5,6,3,4,4,5,4,5,5,6,4,5,5,6,5,6,6,7,
+    3,4,4,5,4,5,5,6,4,5,5,6,5,6,6,7,4,5,5,6,5,6,6,7,5,6,6,7,6,7,7,8,
+    2,3,3,4,3,4,4,5,3,4,4,5,4,5,5,6,3,4,4,5,4,5,5,6,4,5,5,6,5,6,6,7,
+    3,4,4,5,4,5,5,6,4,5,5,6,5,6,6,7,4,5,5,6,5,6,6,7,5,6,6,7,6,7,7,8,
+    3,4,4,5,4,5,5,6,4,5,5,6,5,6,6,7,4,5,5,6,5,6,6,7,5,6,6,7,6,7,7,8,
+    4,5,5,6,5,6,6,7,5,6,6,7,6,7,7,8,5,6,6,7,6,7,7,8,6,7,7,8,7,8,8,9,
+};
+int b2num[0x200] = {
+    0,1,2,0,3,0,0,0,4,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+    6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+    7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+    0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+    8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+    0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+    0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+    0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+    9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+    0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+    0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+    0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+    0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+    0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+    0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+    0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+};
+int tuple[27][9] = {
+    { 0, 1, 2, 3, 4, 5, 6, 7, 8},
+    { 9,10,11,12,13,14,15,16,17},
+    {18,19,20,21,22,23,24,25,26},
+    {27,28,29,30,31,32,33,34,35},
+    {36,37,38,39,40,41,42,43,44},
+    {45,46,47,48,49,50,51,52,53},
+    {54,55,56,57,58,59,60,61,62},
+    {63,64,65,66,67,68,69,70,71},
+    {72,73,74,75,76,77,78,79,80},
+
+    { 0, 9,18,27,36,45,54,63,72},
+    { 1,10,19,28,37,46,55,64,73},
+    { 2,11,20,29,38,47,56,65,74},
+    { 3,12,21,30,39,48,57,66,75},
+    { 4,13,22,31,40,49,58,67,76},
+    { 5,14,23,32,41,50,59,68,77},
+    { 6,15,24,33,42,51,60,69,78},
+    { 7,16,25,34,43,52,61,70,79},
+    { 8,17,26,35,44,53,62,71,80},
+
+    { 0, 1, 2, 9,10,11,18,19,20},
+    { 3, 4, 5,12,13,14,21,22,23},
+    { 6, 7, 8,15,16,17,24,25,26},
+    {27,28,29,36,37,38,45,46,47},
+    {30,31,32,39,40,41,48,49,50},
+    {33,34,35,42,43,44,51,52,53},
+    {54,55,56,63,64,65,72,73,74},
+    {57,58,59,66,67,68,75,76,77},
+    {60,61,62,69,70,71,78,79,80},
+};
+
+//void make2d(bool _a[9][9][9], int _b[9][9]) {
+//    REP(i,9)REP(j,9) {
+//        int sum = 0;
+//        REP(k,9) if (_a[i][j][k]) {sum++; _b[i][j] = k;}
+//        if (sum!=1) _b[i][j] = -1;
+//    }
+//}
+
+void disp(int a[81], bool slp) {
+    cout <<endl <<"+---+---+---+" <<endl;
+    REP(i,9) {
+        REP(j,9) {
+            if (j==0) cout <<"|";
+            if (b2num[a[i*9+j]]==0) cout <<".";
+            else                  cout <<b2num[a[i*9+j]];
+            if (j%3==2) cout <<"|";
+        }
+        cout <<endl;
+        if (i%3==2) cout <<"+---+---+---+" <<endl;
+    }
+    if (slp) usleep(100000);
+}
+
+void disp_detail(int a[81], bool slp) {
+    cout <<endl <<"+--- --- ---+--- --- ---+--- --- ---+" <<endl;
+    REP(i,9) {
+        REP(p,3) {
+            REP(j,9) {
+                if (j==0) cout <<"|";
+                REP(q,3) {
+                    if (a[i*9+j] & b[p*3+q+1]) cout <<p*3+q+1;
+                    else                       cout <<".";
+                }
+                if (j%3==2) cout <<"|";
+                else        cout <<" ";
+            }
+            cout <<endl;
+        }
+        if (i%3==2) cout <<"+--- --- ---+--- --- ---+--- --- ---+" <<endl;
+        else        cout <<"|           |           |           |" <<endl;
+    }
+    if (slp) usleep(100000);
+}
+
+void check(int a[81], bool& completed, bool& error) {
+    error = false;
+    completed = true;
+    REP(i,81) { /* for each cell */
+        if (bitcnt[a[i]] == 0) error = true;
+        if (bitcnt[a[i]] != 1) completed = false;
+    }
+    REP(i,27) { /* for each tuple */
+        int all = 0;
+        REP(j,9) all |= a[tuple[i][j]];
+        if (all != 0x1ff) error = true;
+    }
+}
+
+void sbit(int a[81], bool& update, bool& error) {
+    error = false;
+    REP(i,81) if (bitcnt[a[i]] == 0) error = true;
+
+    REP(i,27)REP(j,9) { /* for each cell in tuple */
+        if (bitcnt[a[tuple[i][j]]]==1) {
+            int b1 = a[tuple[i][j]];
+            REP(k,9) if (j!=k and a[tuple[i][k]] & b1) {
+                a[tuple[i][k]] -= b1;
+                update = true;
+            }
+        }
+    }
+}
+
+void ubit(int a[81], bool& update, bool& error) {
+    update = false;
+    error = false;
+    REP(i,27) { /* for each tuple */
+        REPS(j,1,10) { /* for each bit */
+            int c, num = 0;
+            REP(k,9) if(a[tuple[i][k]] & b[j]) {num++; c=tuple[i][k];}
+            if (num == 0) error = true;
+            if (num == 1 and a[c] != b[j]) {
+                a[c] = b[j];
+                update = true;
+            }
+        }
+    }
+}
+
+void intersection(int a[81], bool& update, bool& error) {
+    update = false;
+    error = false;
+    REP(i,27)REP(j,27) { /* for each 2 tuples */
+        if (i>=j) continue;
+        int type[81]; /* cell type */
+        REP(k,81) type[k] = 0;
+        REP(k,9) type[tuple[i][k]] += 1;
+        REP(k,9) type[tuple[j][k]] += 2;
+        int flag[4]; /* bit flag for each type */
+        REP(k,4) flag[k] = 0;
+        REP(k,81) flag[type[k]] |= a[k];
+        REPS(k,1,10) { /* for each bit */
+            bool b1  = flag[1] & b[k];
+            bool b2  = flag[2] & b[k];
+            bool b12 = flag[3] & b[k];
+            if ((!b1 or !b2) and !b12) error = true;
+            if (b1 and b12 and !b2) {
+                REP(l,9) {
+                    int c = tuple[i][l];
+                    if (type[c]==1 and a[c] & b[k]) a[c] -= b[k];
+                }
+                update = true;
+            }
+            if (!b1 and b12 and b2) {
+                REP(l,9) {
+                    int c = tuple[j][l];
+                    if (type[c]==2 and a[c] & b[k]) a[c] -= b[k];
+                }
+                update = true;
+            }
+        }
+    }
+}
 
 int main() {
-    int a[9][9];
+    int a[81];
 
     /* initialize */
-    REP(i,9)REP(j,9) a[i][j] = 0;
+    REP(i,81) a[i] = 0x1ff;
 
     /* input */
     cout <<"Input sudoku(9 lines with 9 chars):" <<endl;
@@ -16,64 +210,52 @@ int main() {
         string s;
         getline(cin,s);
         REP(j,9) if (j < s.size() and '1' <= s[j] and s[j] <= '9') {
-            a[i][j] = s[j]-'0';
+            a[i*9+j] = b[s[j]-'0'];
         }
     }
 
-    vector<vector<int> > c(9, vector<int>(9, 0));
-    REP(i,9)REP(j,9) c[i][j] = a[i][j];
-    int row = -1;
-    bool next_row = true;
-    while(true) {
-        if (next_row) {
-            row++;
-            if (8<row) break;
-            REP(j,9) c[row][j] = j+1;
-            next_row = false;
-        }
-        else {
-            if (!next_permutation(c[row].begin(), c[row].end())) {
-                REP(j,9) c[row][j] = a[row][j];
-                row--;
-                if (row < 0) break;
-                continue;
-            }
-        }
+    bool completed, update, error;
+    string msg;
+    while (true) {
 
-        bool ok = true;
-        REP(j,9) if (a[row][j] != 0 and c[row][j] != a[row][j]) ok = false;
-        if (!ok) continue;
+        /* display current status */
+        //disp(a, true);
+        disp_detail(a, true);
+cout <<"a";
 
-        REP(i,9)REP(j,9) if (row != i and c[row][j] == c[i][j]) ok = false;
-        if (!ok) continue;
+        /* check for completion */
+        check(a, completed, error);
+        if (error) {msg = "check"; break;}
+        if (completed) break;
+cout <<"b";
 
-        REP(r,3) {
-            int e[10];
-            REP(i,10) e[i] = 0;
-            REP(p,3)REP(q,3) {
-                int cc = c[(int)(row/3)*3+p][r*3+q];
-                if (cc==0) continue;
-                if (1<++e[cc]) ok = false;
-            }
-        }
-        if (!ok) continue;
+        /* A2-1: Sbit search */
+        sbit(a, update, error);
+        if (error) {msg = "Sbit"; break;}
+        if (update) continue;
+cout <<"c";
 
-        next_row = true;
-cout <<row <<":";
-REP(j,9) cout <<c[row][j];
-cout <<endl;
+        /* A2-2: Ubit search */
+        ubit(a, update, error);
+        if (error) {msg = "Ubit"; break;}
+        if (update) continue;
+cout <<"d";
+
+        /* A2-3: Intersection */
+        intersection(a, update, error);
+        if (error) {msg = "Intersection"; break;}
+        if (update) continue;
+cout <<"e";
+
+        /* cannot solve */
+        break;
     }
 
-    cout <<"----- result-" <<endl;
-    REP(i,9) {
-        REP(j,9) {
-            if (j%3==0) cout <<"|";
-            if (c[i][j]==0) cout <<".";
-            else            cout <<c[i][j];
-        }
-        cout <<endl;
-        if (i%3==2) cout <<"------------" <<endl;
+    if (error) {
+        cout <<"Sorry, error occured at " <<msg <<"." <<endl;
+        return -1;
     }
 
+    disp(a, false);
     return 0;
 }
