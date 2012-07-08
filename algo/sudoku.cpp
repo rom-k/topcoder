@@ -119,8 +119,8 @@ void disp_detail(int a[81], bool slp) {
 }
 
 void check(int a[81], bool& completed, bool& error) {
-    error = false;
     completed = true;
+    error = false;
     REP(i,81) { /* for each cell */
         if (bitcnt[a[i]] == 0) error = true;
         if (bitcnt[a[i]] != 1) completed = false;
@@ -133,6 +133,7 @@ void check(int a[81], bool& completed, bool& error) {
 }
 
 void sbit(int a[81], bool& update, bool& error) {
+    update = false;
     error = false;
     REP(i,81) if (bitcnt[a[i]] == 0) error = true;
 
@@ -221,31 +222,35 @@ int main() {
         /* display current status */
         //disp(a, true);
         disp_detail(a, true);
-cout <<"a";
 
         /* check for completion */
         check(a, completed, error);
         if (error) {msg = "check"; break;}
         if (completed) break;
-cout <<"b";
 
         /* A2-1: Sbit search */
         sbit(a, update, error);
         if (error) {msg = "Sbit"; break;}
         if (update) continue;
-cout <<"c";
 
         /* A2-2: Ubit search */
         ubit(a, update, error);
         if (error) {msg = "Ubit"; break;}
         if (update) continue;
-cout <<"d";
 
         /* A2-3: Intersection */
         intersection(a, update, error);
         if (error) {msg = "Intersection"; break;}
         if (update) continue;
-cout <<"e";
+
+        /* A2-3: E(n) */
+        //TODO
+
+        /* A2-4: X(n) */
+        //TODO
+
+        /* A2-5: Negation */
+        //TODO
 
         /* cannot solve */
         break;
@@ -255,7 +260,13 @@ cout <<"e";
         cout <<"Sorry, error occured at " <<msg <<"." <<endl;
         return -1;
     }
+    else if (!completed) {
+        cout <<"Sorry, cannot solve." <<endl;
+        return -1;
+    }
+    else {
+        disp(a, false);
+    }
 
-    disp(a, false);
     return 0;
 }
