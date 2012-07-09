@@ -1,6 +1,8 @@
 //Powerd by http://www2.tokai.or.jp/deepgreen/shortnotes/numberplace/algorithm.htm
 
 #include <iostream>
+#include <vector>
+#include <algorithm>
 using namespace std;
 #define REP(i,n) for(int i=0;i<n;i++)
 #define REPS(i,s,n) for(int i=s;i<n;i++)
@@ -199,6 +201,30 @@ void intersection(int a[81], bool& update, bool& error) {
     }
 }
 
+void en(int a[81], int n, bool& update, bool& error) {
+    update = false;
+    error = false;
+    REP(i,27) { /* for each tuple */
+        vector<bool> bl(9, false);
+        REP(j,n) bl[9-1-j] = true;
+        do {
+            int e = 0x00;
+            REP(j,9) if (bl[j]) e |= a[tuple[i][j]];
+            if (bitcnt[e] == n) {
+                REP(j,9) if (!bl[j] and e & a[tuple[i][j]]) {
+                    a[tuple[i][j]] &= (0x1ff - e);
+                    update = true;
+                }
+            }
+        } while (next_permutation(bl.begin(),bl.end()));
+    }
+}
+
+void xn(int a[81], int n, bool& update, bool& error) {
+    update = false;
+    error = false;
+}
+
 int main() {
     int a[81];
 
@@ -218,39 +244,52 @@ int main() {
     bool completed, update, error;
     string msg;
     while (true) {
+        completed = update = error = false;
 
         /* display current status */
         //disp(a, true);
         disp_detail(a, true);
 
         /* check for completion */
+        msg = "check";
         check(a, completed, error);
-        if (error) {msg = "check"; break;}
-        if (completed) break;
+        if (completed or error) break;
+        if (update) continue;
 
         /* A2-1: Sbit search */
+        msg = "Sbit";
         sbit(a, update, error);
-        if (error) {msg = "Sbit"; break;}
+        if (error) break;
         if (update) continue;
 
         /* A2-2: Ubit search */
+        msg = "Ubit";
         ubit(a, update, error);
-        if (error) {msg = "Ubit"; break;}
+        if (error) break;
         if (update) continue;
 
         /* A2-3: Intersection */
+        msg = "Intersection";
         intersection(a, update, error);
-        if (error) {msg = "Intersection"; break;}
+        if (error) break;
         if (update) continue;
 
         /* A2-3: E(n) */
-        //TODO
-
         /* A2-4: X(n) */
-        //TODO
+        msg = "E(2)";
+        en(a, 2, update, error); //TODO: check for working
+        if (error) break;
+        if (update) continue;
+
+        msg = "X(2)";
+        xn(a, 2, update, error);
+        if (error) break;
+        if (update) continue;
 
         /* A2-5: Negation */
         //TODO
+        if (error) break;
+        if (update) continue;
 
         /* cannot solve */
         break;
