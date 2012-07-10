@@ -201,16 +201,16 @@ void intersection(int a[81], bool& update, bool& error) {
     }
 }
 
-void en(int a[81], int n, bool& update, bool& error) {
+void en(int a[81], int k, bool& update, bool& error) {
     update = false;
     error = false;
     REP(i,27) { /* for each tuple */
         vector<bool> bl(9, false);
-        REP(j,n) bl[9-1-j] = true;
+        REP(j,k) bl[9-1-j] = true;
         do {
             int e = 0x00;
             REP(j,9) if (bl[j]) e |= a[tuple[i][j]];
-            if (bitcnt[e] == n) {
+            if (bitcnt[e] == k) {
                 REP(j,9) if (!bl[j] and e & a[tuple[i][j]]) {
                     a[tuple[i][j]] &= (0x1ff - e);
                     update = true;
@@ -220,9 +220,26 @@ void en(int a[81], int n, bool& update, bool& error) {
     }
 }
 
-void xn(int a[81], int n, bool& update, bool& error) {
+void xn(int a[81], int k, bool& update, bool& error) {
     update = false;
     error = false;
+    REP(i,27) { /* for each tuple */
+        vector<bool> bl(9, false);
+        REP(j,k) bl[9-1-j] = true;
+        do {
+            int e = 0x00;
+            REP(j,9) if(bl[j]) e |= (1<<j);
+            int m = 0;
+            REP(j,9) if (a[tuple[i][j]] & e) m++;
+            if (m == k) {
+                REP(j,9) if (a[tuple[i][j]] & e
+                         and a[tuple[i][j]] & (0x1ff - e)) {
+                    a[tuple[i][j]] &= e;
+                    update = true;
+                }
+            }
+        } while (next_permutation(bl.begin(),bl.end()));
+    }
 }
 
 int main() {
@@ -242,13 +259,16 @@ int main() {
     }
 
     bool completed, update, error;
-    string msg;
+    string msg = "";
     while (true) {
         completed = update = error = false;
 
+        /* debugging */
+        if (msg!="") cout <<"update : " <<msg <<endl;
+
         /* display current status */
         //disp(a, true);
-        disp_detail(a, true);
+        //disp_detail(a, true);
 
         /* check for completion */
         msg = "check";
@@ -277,12 +297,32 @@ int main() {
         /* A2-3: E(n) */
         /* A2-4: X(n) */
         msg = "E(2)";
-        en(a, 2, update, error); //TODO: check for working
+        en(a, 2, update, error);
         if (error) break;
         if (update) continue;
 
         msg = "X(2)";
         xn(a, 2, update, error);
+        if (error) break;
+        if (update) continue;
+
+        msg = "E(3)";
+        en(a, 3, update, error);
+        if (error) break;
+        if (update) continue;
+
+        msg = "X(3)";
+        xn(a, 3, update, error);
+        if (error) break;
+        if (update) continue;
+
+        msg = "E(4)";
+        en(a, 4, update, error);
+        if (error) break;
+        if (update) continue;
+
+        msg = "X(4)";
+        xn(a, 4, update, error);
         if (error) break;
         if (update) continue;
 
