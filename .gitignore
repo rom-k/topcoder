@@ -14,9 +14,12 @@ tmp[0-9]
 *.tmp
 */tmp/*
 */tmp_*/*
+*/__pycache__
+*/.cache
 [0-9]
 *.in
 *.out
+*.pyc
 *.exe
 *.bk
 *.bak
