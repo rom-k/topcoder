@@ -9,11 +9,13 @@ if exist %USERPROFILE%\contestapplet.conf.bak (
     del %USERPROFILE%\contestapplet.conf.bak
 )
 
-if exist conf\contestapplet.conf (
-    copy conf\contestapplet.conf %USERPROFILE%\contestapplet.conf >nul
-)
-if exist conf\contestapplet.conf.bak (
-    copy conf\contestapplet.conf.bak %USERPROFILE%\contestapplet.conf.bak >nul
+if exist conf\contestapplet.conf.win (
+    copy conf\contestapplet.conf.win %USERPROFILE%\contestapplet.conf >nul
 )
 
 conf\ContestAppletProd.jnlp
+
+doskey clexe=cl.exe $1.cpp $t$t $1.exe
+
+%comspec% /k "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\vcvarsall.bat" x86_amd64
+

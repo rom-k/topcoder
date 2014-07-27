@@ -32,9 +32,9 @@ typedef vector<string> VS;
 typedef vector<double> VD;
 typedef vector<LL> VL;
 
-#define FORE(it, c, T) for(T::iterator it = c.begin(); it != c.end(); it++)
-#define FORI(i, n) for(int i = 0; i < (n); i++)
-#define FORIS(i, s, n) for(int i = (s); i < (n); i++)
+#define REPE(it, c, T) for(T::iterator it = c.begin(); it != c.end(); it++)
+#define REPS(i, s, n) for(int i = (s); i < (n); i++)
+#define REP(i, n) REPS(i, 0, n)
 #define CLEAR(a) memset(a, 0, sizeof(a))
 #define SORT(a) sort(a.begin(), a.end())
 #define REVERSE(a) reverse(a.begin(), a.end())
@@ -51,17 +51,13 @@ typedef vector<LL> VL;
 
 class $CLASSNAME$ {
 public:
-    $RC$ $METHODNAME$($METHODPARMS$) {
-        $RC$ ret = 0;
-        return ret;
-    }
+   $RC$ $METHODNAME$( $METHODPARMS$ ) {
 
-    $TESTCODE$
+   }
 };
 
-// BEGIN CUT HERE
-int main() {
-    $CLASSNAME$ ___test;
-    ___test.run_test(-1);
-}
-// END CUT HERE
+$BEGINCUT$
+$TESTCODE$
+
+$DEFAULTMAIN$
+$ENDCUT$
